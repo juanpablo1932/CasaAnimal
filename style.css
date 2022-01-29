@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*   HEADER   */
+
+.headerIndex {
+    width: 100%;
+    display: flex;
+    column-gap: 4rem;
+    height: 3rem;
+    align-items: center;
+    background: #BDB7B7;
+}
+
+.headerMenu {
+    width: 70%;
+}
+
+.headerInput {
+    height: 60%;
+}
+
+/*   MAIN   */
+/*   MAIN CARROUSEL 1   */
+.carrouselPrincipal .carousel-item {
+    background: grey;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 15rem;
+}
+
+/*   MAIN CARROUSEL 2   */
+
+.marcasCarrousel__titulo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.marcasCarrousel__titulo ion-icon {
+    color: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+.marcasCarrousel__titulo .carousel-control-prev {
+    margin-right: 1rem;
+}
+
+.marcasCarrousel__titulo .carousel-control-prev,
+.marcasCarrousel__titulo .carousel-control-next {
+    height: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+.carrouselSecundario .carousel-item {
+    height: 12rem;
+}
+
+.carrouselSecundario .card-group {
+    display: flex;
+    justify-content: center;
+}
+
+.carrouselSecundario .card {
+    padding: .7rem;
+    width: 100%;
+    height: 100%;
+}
+
+.carrouselSecundario .card img {
+    width: 100%;
+    height: 100%;
+}
