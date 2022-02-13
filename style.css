@@ -41,6 +41,10 @@ body {
     align-items: center;
 }
 
+.headerMenuButton:focus {
+    box-shadow: none;
+}
+
 .headerMenuButton ion-icon {
     color: var(--blanco);
     width: 2rem;
@@ -59,9 +63,40 @@ body {
     padding: 0;
 }
 
+.headerIndex__acordeon .accordion-button {
+    color: var(--main--color);
+}
+
+.headerIndex__acordeon .accordion-button:focus {
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--main--color);
+}
+
+.accordion-button::after {
+    color: var(--main--color);
+    background-image: url(images/chevron-forward-outline.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: var(--main--color);
+    background-image: url(images/chevron-forward-outline.svg);
+    transform: rotate(90deg);
+}
+
+
 .headerIndex__acordeon .accordion-body {
     display: flex;
     flex-direction: column;
+    color: var(--main--color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.headerIndex__acordeon .accordion-body a {
+    color: var(--main--color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 .headerIndex__acordeon a {
@@ -421,15 +456,16 @@ body {
 }
 
 .mainIndex__bannerChico div {
-    border-radius: .5rem;
-    background: #C4C4C4;
-    box-shadow: 0px 2px #8d8d8d;
+    border: 1px solid var(--main--color);
 }
 
 .mainIndex__bannerChico p {
-    font-size: .9rem;
-    text-align: center;
+    font-size: .8rem;
     margin: 0;
+    text-align: center;
+    color: var(--main--color);
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /* MAIN BANNER BIENVENIDO */
