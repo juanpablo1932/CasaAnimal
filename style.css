@@ -5,8 +5,17 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main--color: #551A8B;
+    --color--pesos: #8E24AA;
+    --blanco: white;
+    --negro: black;
+    --sombra--contenedores: gray;
+    --boton--comprar: #F0D149;
 }
 
 /*   HEADER   */
@@ -19,11 +28,31 @@ body {
     column-gap: 4rem;
     height: 3rem;
     align-items: center;
-    background: #BDB7B7;
+    background: var(--main--color);
 }
 
 .headerMenu {
     width: 70%;
+}
+
+.headerMenuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerMenuButton ion-icon {
+    color: var(--blanco);
+    width: 2rem;
+    height: 2rem;
+}
+
+.offcanvas-start {
+    top: 3rem;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0;
 }
 
 .headerMenu .offcanvas-body {
@@ -37,7 +66,7 @@ body {
 
 .headerIndex__acordeon a {
     text-decoration: none;
-    color: black;
+    color: var(--negro);
 }
 
 
@@ -65,17 +94,26 @@ body {
     height: 15rem;
 }
 
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--negro);
+}
+
 /*   MAIN BANNER   */
 
 .mainIndex__bannerContainer {
     height: 12vh;
-    background: #CACACA;
+    background: var(--blanco);
     padding: .4rem 0;
+    box-shadow: 0 .5px 5px var(--sombra--contenedores);
 }
 
 .mainIndex__bannerContainer div:nth-child(2) {
-    border-left: 1px solid #969696;
-    border-right: 1px solid #969696;
+    border-left: 1px solid var(--main--color);
+    border-right: 1px solid var(--main--color);
 }
 
 .mainIndex__bannerContainer div {
@@ -98,31 +136,44 @@ body {
 
 .mainIndex__marcasCarrousel {
     padding: 0;
+    margin: 1rem 0 0 0;
 }
 
 .marcasCarrousel__titulo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 12vh;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.marcasCarrousel__titulo div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .marcasCarrousel__titulo h2 {
     font-size: 1rem;
     font-weight: 700;
+    margin: 0 1rem 0 0;
 }
 
-.marcasCarrousel__titulo h3 {
+.marcasCarrousel__titulo a {
     font-size: .8rem;
-    color: #606060;
+    text-decoration: none;
+    color: var(--main--color);
 }
 
-.marcasCarrousel__titulo div {
+.marcasCarrousel__titulo div:nth-child(2) {
     display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem 1rem 0;
 }
 
 .marcasCarrousel__titulo ion-icon {
-    color: black;
+    color: var(--main--color);
     width: 2rem;
     height: 2rem;
 }
@@ -140,9 +191,9 @@ body {
     justify-content: center;
     width: 1.5rem;
     padding: 0;
-    color: #fff;
+    color: var(--blanco);
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--main--color);
     border-radius: 50%;
     opacity: 1;
     transition: opacity .15s ease;
@@ -162,15 +213,10 @@ body {
     margin: 0 1rem;
     width: 100%;
     height: 100%;
-    background: #C4C4C4;
 }
 
-.carrouselSecundario .card p {
+.carrouselSecundario .card img {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 /*   MAIN MAS VENDIDOS   */
@@ -198,15 +244,175 @@ body {
 
 .masVendidos__productos {
     padding: 0;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-around;
 }
 
-.masVendidos__productos div {
-    padding: 0;
-    height: 20vh;
-    background: #C4C4C4;
+/*              PRODUCTO              */
+.producto {
+    width: 45%;
+    padding: 0 0 .5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1rem 0;
 }
+
+.producto button {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+.producto button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.producto img {
+    width: 80%;
+}
+
+.producto a {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    width: 85%;
+    padding: .2rem 2rem;
+    color: var(--blanco);
+    background: var(--boton--comprar);
+    border-radius: 3px;
+}
+
+.productoCard {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem .5rem 0 .5rem;
+}
+
+.productoCard .card-body {
+    padding: 0;
+}
+
+.producto .card-body h5 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.producto .card-body p {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modalProducto {
+    padding: 0;
+}
+
+.modalProducto__titulo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modalProducto__titulo button {
+    width: 10%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalProducto__titulo ion-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.modalProducto__titulo h2 {
+    margin-left: 5%;
+}
+
+.modalProducto .modal-dialog {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalProducto .modal-content {
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+}
+
+.modalProducto .modal-content h2 {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.modalProducto .modal-content img {
+    width: 70%;
+    margin-top: .5rem;
+}
+
+.modalProducto .modal-content p {
+    margin: .5rem 0;
+    padding: 0 1rem;
+}
+
+.seleccionPeso {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seleccionPeso h3 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0 0 1rem 0;
+}
+
+.seleccionPeso div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.seleccionPeso div div {
+    width: 15%;
+    background: var(--color--pesos);
+    color: var(--blanco);
+    padding: 0 2rem;
+    border-radius: 3px;
+}
+
+.seleccionPeso div div input {
+    background: none;
+    border: none;
+    color: var(--blanco);
+    font-family: 'Roboto', sans-serif;
+}
+
+.modalProducto .modal-content a {
+    text-align: center;
+    text-decoration: none;
+    width: 85%;
+    padding: .2rem 2rem;
+    color: var(--blanco);
+    background: var(--boton--comprar);
+    border-radius: 3px;
+}
+
 
 /* MAIN BANNER CHICO */
 
@@ -260,7 +466,7 @@ body {
     border-radius: .5rem;
     background: #817B7B;
     padding: 0 2rem;
-    color: white;
+    color: var(--blanco);
 }
 
 
@@ -280,7 +486,7 @@ body {
 
 .footerIndex a {
     text-decoration: none;
-    color: black;
+    color: var(--negro);
     font-weight: 700;
 }
 

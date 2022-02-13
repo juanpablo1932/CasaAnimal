@@ -88,16 +88,8 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-
       </div>
     </div>
-
-    <input class="headerInput" type="text" name="" id="">
 
   </header>
 
@@ -162,10 +154,12 @@
     <section class="mainIndex__marcasCarrousel container-fluid">
 
       <!-- Inicio carruosel secundario -->
-      <div class="marcasCarrousel__titulo">
-        <h2>Nuestras marcas</h2>
-        <h3>/Consultar Otras</h3>
-        <div>
+      <div class="marcasCarrousel__titulo row">
+        <div class="col-12">
+          <h2>Nuestras marcas</h2>
+          <a href="">Ver mas</a>
+        </div>
+        <div class="col-12">
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
             <ion-icon name="chevron-back-sharp"></ion-icon>
@@ -185,14 +179,14 @@
             <!-- Primer grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <p>ROYAL</p>
+                <img src="images/Royal.png" alt="">
 
               </div>
               <div class="card">
-                <p>PURINA PRO PLAN</p>
+                <img src="images/PurinaProPlan.png" alt="">
               </div>
               <div class="card">
-                <p>VITALCAN</p>
+                <img src="images/VitalCan.png" alt="">
               </div>
             </div>
 
@@ -203,13 +197,13 @@
             <!-- Segundo grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <p>EUKANUBA</p>
+                <img src="images/Eukanubae.png" alt="">
               </div>
               <div class="card">
-                <p>OLD PRINCE</p>
+                <img src="images/OldPrince.png" alt="">
               </div>
               <div class="card">
-                <p>PURINA CAT CHOW</p>
+                <img src="images/PurinaCatChow.png" alt="">
               </div>
             </div>
 
@@ -220,13 +214,13 @@
             <!-- Tercer grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <p>GOLOCAN</p>
+                <img src="images/Golocan.png" alt="">
               </div>
               <div class="card">
-                <p>OLD PRINCE</p>
+                <img src="images/DrZoo.png" alt="">
               </div>
               <div class="card">
-                <p>CONSULTAR MAS MARCAS</p>
+                <img src="images/DogChow.png" alt="">
               </div>
             </div>
 
@@ -242,16 +236,172 @@
       <div class="row justify-content-center">
         <div class="masVendidos__titulo col-12">
           <h2>Los mas vendidos</h2>
-          <h3>Ver más</h3>
         </div>
 
         <div class="masVendidos__productos row col-12">
-          <div class="col-5"></div>
-          <div class="col-5"></div>
-          <div class="col-5"></div>
-          <div class="col-5"></div>
-          <div class="col-5"></div>
-          <div class="col-5"></div>
+
+
+          <!-- Primer producto -->
+          <div class="producto">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+              <div class="card productoCard">
+                <img src="images/producto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buenar Dog Premiun</h5>
+                  <p class="card-text">Alimento para perro adulto mediano</p>
+                </div>
+              </div>
+
+            </button>
+            <a href="">Comprar</a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade modalProducto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modalProducto__titulo">
+                  <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </button>
+                  <h2>Buenar Dog Premium</h2>
+                </div>
+                <img src="images/producto.png" alt="">
+                <p>Todo lo que tu mascota necesita para una nutrición completa.Rico en proteínas fáciles de digerir,
+                  para caninos adultos gammers.</p>
+                <div class="seleccionPeso">
+                  <h3>Sleccione Peso Alimento</h3>
+                  <div>
+                    <div>
+                      <input type="button" value="3kg">
+                    </div>
+                    <div>
+                      <input type="button" value="5kg">
+                    </div>
+                    <div>
+                      <input type="button" value="15kg">
+                    </div>
+                  </div>
+                </div>
+                <a href="">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Segundo producto -->
+          <div class="producto">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+              <div class="card productoCard">
+                <img src="images/producto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buenar Dog Premiun</h5>
+                  <p class="card-text">Alimento para perro adulto mediano</p>
+                </div>
+              </div>
+
+            </button>
+            <a href="">Comprar</a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tercer producto -->
+          <div class="producto">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+              <div class="card productoCard">
+                <img src="images/producto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buenar Dog Premiun</h5>
+                  <p class="card-text">Alimento para perro adulto mediano</p>
+                </div>
+              </div>
+
+            </button>
+            <a href="">Comprar</a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarto producto -->
+          <div class="producto">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+              <div class="card productoCard">
+                <img src="images/producto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Buenar Dog Premiun</h5>
+                  <p class="card-text">Alimento para perro adulto mediano</p>
+                </div>
+              </div>
+
+            </button>
+            <a href="">Comprar</a>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
 
@@ -268,8 +418,9 @@
     </section>
 
     <section class="mainIndex__bannerCupon container-fluid">
-      <p>¡Completa tus datos y recibí tu cupón de 10% OFF en tu primer compra!</p>
-      <input type="button" value="QUIERO MI CUPÓN">
+      <img src="images/Banner cupon.svg" alt="">
+      <!-- <p>¡Completa tus datos y recibí tu cupón de 10% OFF en tu primer compra!</p>
+      <input type="button" value="QUIERO MI CUPÓN"> -->
     </section>
 
   </main>
