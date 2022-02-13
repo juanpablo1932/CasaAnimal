@@ -450,25 +450,39 @@ body {
 /* MAIN BANNER CUPON */
 
 .mainIndex__bannerCupon {
-    padding: 1rem 1.5rem;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    position: relative;
+    height: 100%;
+    padding: 0;
     background: #C4C4C4;
 }
 
+.mainIndex__bannerCupon img {
+    object-fit: cover;
+}
 
-.mainIndex__bannerCupon input {
-    border: none;
-    border-radius: .5rem;
-    background: #817B7B;
-    padding: 0 2rem;
+.mainIndex__bannerCupon h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    width: 55%;
+    top: 10%;
+    right: 13%;
     color: var(--blanco);
 }
 
+.mainIndex__bannerCupon a {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    padding: 0 1rem;
+    color: var(--blanco);
+    background: var(--boton--comprar);
+    border-radius: 3px;
+}
 
 /*     FOOTER     */
 
@@ -479,14 +493,14 @@ body {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 1rem 0 3rem 0;
-    background: rgba(196, 196, 196, 0.56);
-    ;
+    padding: 2rem 0;
+    background: var(--main--color);
+    color: var(--blanco);
 }
 
 .footerIndex a {
     text-decoration: none;
-    color: var(--negro);
+    color: var(--blanco);
     font-weight: 700;
 }
 
