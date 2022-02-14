@@ -628,7 +628,7 @@ body {
   margin: 2rem 0 2rem 0;
 }
 .bannerCat {
-  background-image: url(../root/images/banner/visita_gatos.png);
+  background-image: url(./images/banner/visita_gatos.png);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
