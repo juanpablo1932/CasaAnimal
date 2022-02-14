@@ -17,10 +17,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;700&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <title>Casa Animal</title>
   </head>
@@ -43,110 +39,23 @@
         id="menuModal"
         aria-labelledby="offcanvasExampleLabel"
       >
-        <div class="offcanvas-body">
-          <!-- COMIENZO DEL ACORDEON DEL MENÚ -->
-          <div class="accordion headerIndex__acordeon" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Perros
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <a href="">Alimento</a>
-                  <a href="">Salud</a>
-                  <a href="">Golosinas</a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Gatos
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body"></div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Otras mascotas
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body"></div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Accesorios
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="collapseFour"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body"></div>
-              </div>
-            </div>
-          </div>
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
+        <div class="offcanvas-body"></div>
       </div>
+
+      <input class="headerInput" type="text" name="" id="" />
     </header>
 
-    <main class="mainIndex container-fluid">
-      <section class="mainIndex__carrousel container-fluid">
-        <!-- Inicio carruosel principal -->
-
+    <main class="mainIndex">
+      <section class="mainIndex__carrousel">
         <div
           id="carouselExampleIndicators"
           class="carousel slide carrouselPrincipal"
@@ -218,48 +127,29 @@
         </div>
       </section>
 
-      <section class="mainIndex__banner container-fluid">
-        <div class="mainIndex__bannerContainer row">
-          <div class="col-4">
-            <img src="images/ICONENVIO.png" alt="" />
-            <p>Envíos a todo el país</p>
-          </div>
-          <div class="col-4">
-            <img src="images/ICONPROG.png" alt="" />
-            <p>Programá tu pedido</p>
-          </div>
-          <div class="col-4">
-            <img src="images/ICONPAGOS.png" alt="" />
-            <p>Medios de pago</p>
-          </div>
-        </div>
-      </section>
+      <section class="mainIndex__banner"></section>
 
-      <section class="mainIndex__marcasCarrousel container-fluid">
-        <!-- Inicio carruosel secundario -->
-        <div class="marcasCarrousel__titulo row">
-          <div class="col-12">
-            <h2>Nuestras marcas</h2>
-            <a href="">Ver mas</a>
-          </div>
-          <div class="col-12">
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <ion-icon name="chevron-back-sharp"></ion-icon>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <ion-icon name="chevron-forward-sharp"></ion-icon>
-            </button>
-          </div>
+      <section class="mainIndex__marcasCarrousel">
+        <div class="marcasCarrousel__titulo">
+          <h2>Nuestras marcas</h2>
+          <h3>/Consultar Otras</h3>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <ion-icon name="chevron-back-sharp"></ion-icon>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <ion-icon name="chevron-forward-sharp"></ion-icon>
+          </button>
         </div>
 
         <!-- Comienzo carrousel secundario -->
@@ -273,13 +163,21 @@
               <!-- Primer grupo de cards del carrousel secundario -->
               <div class="card-group">
                 <div class="card">
-                  <img src="images/Royal.png" alt="" />
+                  <img src="images/Royal.png" class="card-img-top" alt="..." />
                 </div>
                 <div class="card">
-                  <img src="images/PurinaProPlan.png" alt="" />
+                  <img
+                    src="images/PurinaProPlan.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
                 <div class="card">
-                  <img src="images/VitalCan.png" alt="" />
+                  <img
+                    src="images/VitalCan.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
               </div>
             </div>
@@ -287,13 +185,25 @@
               <!-- Segundo grupo de cards del carrousel secundario -->
               <div class="card-group">
                 <div class="card">
-                  <img src="images/Eukanubae.png" alt="" />
+                  <img
+                    src="images/Eukanubae.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
                 <div class="card">
-                  <img src="images/OldPrince.png" alt="" />
+                  <img
+                    src="images/OldPrince.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
                 <div class="card">
-                  <img src="images/PurinaCatChow.png" alt="" />
+                  <img
+                    src="images/PurinaCatChow.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
               </div>
             </div>
@@ -301,381 +211,34 @@
               <!-- Tercer grupo de cards del carrousel secundario -->
               <div class="card-group">
                 <div class="card">
-                  <img src="images/Golocan.png" alt="" />
+                  <img
+                    src="images/Golocan.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
                 <div class="card">
-                  <img src="images/DrZoo.png" alt="" />
+                  <img
+                    src="images/OldPrince.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
                 <div class="card">
-                  <img src="images/DogChow.png" alt="" />
+                  <img
+                    src="images/ConsultarMasMarcas.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="mainIndex__masVendidos container-fluid">
-        <div class="row justify-content-center">
-          <div class="masVendidos__titulo col-12">
-            <h2>Los mas vendidos</h2>
-          </div>
-
-          <div class="masVendidos__productos row col-12">
-            <!-- Primer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Segundo producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Tercer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Cuarto producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="mainIndex__bannerChico container-fluid">
-        <div>
-          <p>CONSULTA TODOS LOS PRODUCTOS DISPONIBLES</p>
-        </div>
-      </section>
-
-      <section class="mainIndex__bannerBienvenido container-fluid">
-        <h3>BANNER BIENVENIDOS</h3>
-      </section>
-
-      <section class="mainIndex__bannerCupon container-fluid">
-        <img src="images/Banner cupon.png" alt="" />
-        <h3>
-          ¡Completa tus datos y recibí tu cupón de 10% OFF en tu primer compra!
-        </h3>
-        <a href="">Quiero mi cupon</a>
       </section>
     </main>
 
-    <footer class="footerIndex">
-      <a href="">INICIO</a>
-      <a href="">NOSOTROS</a>
-      <a href="">CONTACTO</a>
-      <a href="">PREGUNTAS FRECUENTES</a>
-      <a href="">GATOS</a>
-      <a href="">PERROS</a>
-      <a href="">ACCESORIOS</a>
-      <a href="">DIRECCIÓN</a>
-      <p>Tucuman 99 - Lomas de Zamora Buenos Aires</p>
-
-      <div>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-facebook"></ion-icon>
-      </div>
-    </footer>
+    <footer class="footerIndex"></footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
