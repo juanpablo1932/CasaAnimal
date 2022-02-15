@@ -643,3 +643,11 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+.bannerCatGolosina {
+  background-image: url("./images/banner/visita_gatos_golosina.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 180px;
+  background-color: #551a8b;
+}
