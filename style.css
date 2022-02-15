@@ -630,7 +630,7 @@ body {
 .bannerCat {
   background-image: url("./images/banner/visita_gatos.png");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 180px;
   background-color: #551a8b;
@@ -638,7 +638,7 @@ body {
 .bannerCatSalud {
   background-image: url("./images/banner/visita_gatos_salud.png");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 180px;
   background-color: #551a8b;
@@ -646,7 +646,7 @@ body {
 .bannerCatGolosina {
   background-image: url("./images/banner/visita_gatos_golosina.png");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 180px;
   background-color: #551a8b;
