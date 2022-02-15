@@ -636,7 +636,7 @@ body {
   background-color: #551a8b;
 }
 .bannerCatSalud {
-  background-image: url(../root/images/banner/visita_gatos_salud.png);
+  background-image: url(./images/banner/visita_gatos_salud.png);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
