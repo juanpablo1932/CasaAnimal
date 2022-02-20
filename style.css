@@ -15,7 +15,7 @@ body {
   --blanco: white;
   --negro: black;
   --sombra--contenedores: gray;
-  --boton--comprar: #f0d149;
+  --boton--comprar: #9752da;
 }
 
 /* ========================================================================================================= */
@@ -651,12 +651,6 @@ body {
   flex-wrap: wrap;
 }
 
-.card__btn--color {
-  background-color: #f0d149;
-  border-color: #f0d149;
-  color: #fafafa;
-  width: 100%;
-}
 .producto {
   border: solid;
   border-width: 1px;
