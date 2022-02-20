@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -90,13 +90,13 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--main--color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
 }
 
 .headerIndex__acordeon .accordion-body a {
   color: var(--main--color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin: 0 0 1rem 0;
 }
@@ -307,7 +307,7 @@ body {
 }
 
 .producto button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
 }
 
@@ -321,7 +321,7 @@ body {
 }
 
 .producto a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   text-decoration: none;
   width: 85%;
@@ -351,7 +351,7 @@ body {
 .producto .card-body p {
   text-align: left;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .modalProducto {
@@ -448,7 +448,7 @@ body {
   background: none;
   border: none;
   color: var(--blanco);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .modalProducto .modal-content a {
@@ -478,7 +478,7 @@ body {
   margin: 0;
   text-align: center;
   color: var(--main--color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ========================================================================================================= */
@@ -541,7 +541,7 @@ body {
 /* ========================================================================================================= */
 
 .mainPreguntas {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 1.5rem 1rem;
 }
 
@@ -676,7 +676,7 @@ body {
   margin: 2rem 0 2rem 0;
 }
 .bannerCat {
-  background-image: url('./images/banner/visita_gatos.png');
+  background-image: url("./images/banner/visita_gatos.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -684,7 +684,7 @@ body {
   background-color: #551a8b;
 }
 .bannerCatSalud {
-  background-image: url('./images/banner/visita_gatos_salud.png');
+  background-image: url("./images/banner/visita_gatos_salud.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -692,7 +692,7 @@ body {
   background-color: #551a8b;
 }
 .bannerCatGolosina {
-  background-image: url('./images/banner/visita_gatos_golosina.png');
+  background-image: url("./images/banner/visita_gatos_golosina.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -701,6 +701,22 @@ body {
 }
 .bannerDog {
   background-image: url("./images/banner/visita_perros.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  background-color: #551a8b;
+}
+.bannerDogGolosina {
+  background-image: url("./images/banner/visita_perros_golosina.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  background-color: #551a8b;
+}
+.bannerDogSalud {
+  background-image: url("./images/banner/visita_perros_salud.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
