@@ -645,3 +645,11 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+.bannerDog {
+  background-image: url("./images/banner/visita_perros.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  background-color: #551a8b;
+}
