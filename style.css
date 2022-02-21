@@ -16,6 +16,7 @@ body {
   --negro: black;
   --sombra--contenedores: gray;
   --boton--comprar: #9752da;
+  --boton--cupon: #F89DFF;
   --button--accordion: #0a847e;
   --color--nav-footer: #efebe2;
 }
@@ -309,6 +310,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 0 1rem 0;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(245, 199, 81, 0.102);
+  background-color: #ffffff;
 }
 
 .producto button {
@@ -354,6 +359,7 @@ body {
 }
 
 .producto .card-body p {
+  height: 3rem;
   text-align: left;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -410,50 +416,50 @@ body {
   font-weight: 900;
 }
 
-.modalProducto .modal-content img {
+/* .modalProducto .modal-content img {
   width: 70%;
   margin-top: 0.5rem;
-}
+} */
 
-.modalProducto .modal-content p {
-  margin: 0.5rem 0;
-  padding: 0 1rem;
-}
-
-.seleccionPeso {
-  display: flex;
+.carouselProductos {
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  height: 50%;
+}
+
+.carouselProductos button span {
   justify-content: center;
+  align-self: center;
 }
 
-.seleccionPeso h3 {
-  font-size: 1rem;
-  font-weight: 900;
-  margin: 0 0 1rem 0;
+.modalProducto .modal-content h4 {
+  font-weight: 600;
+  font-size: .9rem;
 }
 
-.seleccionPeso div {
+.modalProducto .modal-content .modalSpan {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.infoPesos {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
-.seleccionPeso div div {
-  width: 15%;
-  background: var(--color--pesos);
-  color: var(--blanco);
-  padding: 0 2rem;
-  border-radius: 3px;
+.infoPesos ul {
+  padding: 0 0 0 2rem;
+  text-align: left;
 }
 
-.seleccionPeso div div input {
-  background: none;
-  border: none;
-  color: var(--blanco);
-  font-family: "Roboto", sans-serif;
+.infoPesos li {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.infoPesos p {
+  margin: 0 0 0 .5rem;
+  font-size: .8rem;
+  font-weight: normal;
+  display: inline;
 }
 
 .modalProducto .modal-content a {
@@ -491,16 +497,14 @@ body {
 /* ========================================================================================================= */
 
 .mainIndex__bannerBienvenido {
-  padding: 1rem 1.5rem;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+  height: 100%;
   background: #8d8d8d;
 }
 
-.mainIndex__bannerBienvenido h3 {
-  text-align: center;
+.mainIndex__bannerBienvenido a {
+  width: 100%;
+  height: 100%;
 }
 
 /* ========================================================================================================= */
@@ -518,29 +522,19 @@ body {
   object-fit: cover;
 }
 
-.mainIndex__bannerCupon h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  width: 55%;
-  top: 10%;
-  right: 13%;
-  color: var(--blanco);
-}
-
 .mainIndex__bannerCupon a {
   position: absolute;
-  bottom: 15%;
+  bottom: 14%;
   right: 15%;
   text-align: center;
   text-decoration: none;
   width: 50%;
-  padding: 0 1rem;
+  padding: .2rem 1rem;
   color: var(--blanco);
-  background: var(--boton--comprar);
+  background: var(--boton--cupon);
   border-radius: 3px;
 }
+
 /* ========================================================================================================= */
 /*         PREGUNTAS FRECUENTES             */
 /* ========================================================================================================= */
@@ -614,32 +608,39 @@ body {
 .mainDogsFood__section {
   margin: 1rem;
 }
+
 .mainDogsFood__section-label {
   font-size: 18px;
 }
+
 .mainDogsFood__section-buttons {
   display: flex;
   justify-content: space-around;
   margin: 2rem 0 2rem 0;
 }
+
 .mainDogsFood__section-buttons--size {
   padding: 0 !important;
   width: 40%;
   font-size: 16px;
 }
+
 .mainDogsFood__section-buttons--color {
   background-color: #8e24aa;
   border-color: #8e24aa !important;
   color: #fafafa;
 }
+
 .btn:hover {
   color: #fafafa !important;
 }
+
 .dogsFood__secos--titulo {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .dogsFood__secos a {
   color: #551a8b;
   text-decoration: none;
@@ -651,35 +652,35 @@ body {
   margin-bottom: 0 !important;
   font-size: 18px;
 }
+
 .dogsFood__secos--margin {
   display: flex;
   flex-wrap: wrap;
 }
 
-.producto {
-  border: solid;
-  border-width: 1px;
-  border-color: rgba(245, 199, 81, 0.102);
-  background-color: #ffffff;
-}
 .producto a {
   color: #fafafa;
 }
+
 .producto .card-title {
   font-size: 14px !important;
 }
+
 .producto .card-text {
   font-size: 12px !important;
 }
+
 .linkGatosFood__seco--a {
   color: #551a8b;
   text-decoration: none;
   font-size: 14px;
 }
+
 .linkGatosFood__seco--div {
   text-align: right;
   margin: 2rem 0 2rem 0;
 }
+
 .bannerCat {
   background-image: url("./images/banner/visita_gatos.png");
   background-position: center;
@@ -688,6 +689,7 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+
 .bannerCatSalud {
   background-image: url("./images/banner/visita_gatos_salud.png");
   background-position: center;
@@ -696,6 +698,7 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+
 .bannerCatGolosina {
   background-image: url("./images/banner/visita_gatos_golosina.png");
   background-position: center;
@@ -704,6 +707,7 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+
 .bannerDog {
   background-image: url("./images/banner/visita_perros.png");
   background-position: center;
@@ -712,6 +716,7 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+
 .bannerDogGolosina {
   background-image: url("./images/banner/visita_perros_golosina.png");
   background-position: center;
@@ -720,6 +725,7 @@ body {
   height: 180px;
   background-color: #551a8b;
 }
+
 .bannerDogSalud {
   background-image: url("./images/banner/visita_perros_salud.png");
   background-position: center;
