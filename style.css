@@ -633,28 +633,13 @@ body {
   color: #fafafa !important;
 }
 
-.dogsFood__secos--titulo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
 
-.dogsFood__secos a {
-  color: #551a8b;
-  text-decoration: none;
-  font-size: 14px;
-}
 
-.dogsFood__secos h2 {
-  margin-right: 1rem;
-  margin-bottom: 0 !important;
+.tipoAlimento__titulo h2 {
+  font-weight: 100;
   font-size: 18px;
 }
 
-.dogsFood__secos--margin {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .producto a {
   color: #fafafa;
@@ -676,7 +661,7 @@ body {
 
 .linkGatosFood__seco--div {
   text-align: right;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .bannerCat {
@@ -915,6 +900,7 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
 
 
 }
