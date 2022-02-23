@@ -666,7 +666,7 @@ body {
 }
 
 .bannerCat {
-  background-image: url("./images/banner/visita_gatos.png");
+  background-image: url("./images/banner/visita_gatos.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -675,7 +675,7 @@ body {
 }
 
 .bannerCatSalud {
-  background-image: url("./images/banner/visita_gatos_salud.png");
+  background-image: url("./images/banner/visita_gatos_salud.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -684,7 +684,7 @@ body {
 }
 
 .bannerCatGolosina {
-  background-image: url("./images/banner/visita_gatos_golosina.png");
+  background-image: url("./images/banner/visita_gatos_golosina.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@ body {
 }
 
 .bannerDog {
-  background-image: url("./images/banner/visita_perros.png");
+  background-image: url("./images/banner/visita_perros.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -702,7 +702,7 @@ body {
 }
 
 .bannerDogGolosina {
-  background-image: url("./images/banner/visita_perros_golosina.png");
+  background-image: url("./images/banner/visita_perros_golosina.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -711,7 +711,7 @@ body {
 }
 
 .bannerDogSalud {
-  background-image: url("./images/banner/visita_perros_salud.png");
+  background-image: url("./images/banner/visita_perros_salud.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
