@@ -720,6 +720,14 @@ body {
 }
 
 /* ========================================================================================================= */
+/* PRODUCT CARD  */
+/* ========================================================================================================= */
+
+.productos__cards--size {
+  justify-content: flex-start !important;
+}
+
+/* ========================================================================================================= */
 /* MEDIAS QUERYS */
 /* ========================================================================================================= */
 
@@ -890,12 +898,18 @@ body {
     justify-content: space-evenly;
     margin: 0 1rem 1rem 1rem;
     border: 1px solid rgba(245, 199, 81, 0.102);
+    border-radius: 16px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .producto--size {
-    width: 25% !important;
-    height: 20rem;
+    width: 30% !important;
+    height: 376px !important;
+    margin: 1rem 1% 1rem 2% !important;
   }
+
+  /* .productos__cards--size {
+    justify-content: flex-start !important;
+  } */
 }
