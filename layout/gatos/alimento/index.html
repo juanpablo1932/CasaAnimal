@@ -27,8 +27,10 @@
   </head>
   <body>
     <header class="headerIndex">
+      <!-- HEADER MOBILE -->
+
       <button
-        class="btn headerMenuButton"
+        class="btn headerMenuButton d-md-none"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#menuModal"
@@ -38,7 +40,7 @@
       </button>
 
       <div
-        class="offcanvas offcanvas-start headerMenu"
+        class="offcanvas offcanvas-start headerMenu d-md-none"
         tabindex="-1"
         id="menuModal"
         aria-labelledby="offcanvasExampleLabel"
@@ -93,7 +95,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <a href="">Alimento</a>
+                  <a href="../alimento">Alimento</a>
                   <a href="../salud">Salud</a>
                   <a href="../golosinas">Golosinas</a>
                 </div>
@@ -122,37 +124,26 @@
                 <div class="accordion-body"></div>
               </div>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Accesorios
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="collapseFour"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body"></div>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
+
+      <!-- HEADER DESKTOP -->
+
+      <div class="headerLogoDesktop d-none d-md-block">CASA ANIMAL</div>
+      <div class="menuDesktop d-none d-md-block">
+        <ul>
+          <li>Perros</li>
+          <li>Gatos</li>
+          <li>Accesorios</li>
+          <li>Otras mascotas</li>
+        </ul>
       </div>
     </header>
     <main class="mainDogsFood">
       <section class="mainDogsFood__section">
         <div>
-          <h1 class="mainDogsFood__section-label">Alimento para Gatos</h1>
+          <h1 class="mainDogsFood__section-label">Alimento para gatos</h1>
           <div class="mainDogsFood__section-buttons">
             <a
               class="mainDogsFood__section-buttons--size mainDogsFood__section-buttons--color btn"
@@ -168,328 +159,625 @@
             >
           </div>
         </div>
-        <section class="dogsFood__secos">
-          <div class="col-12 dogsFood__secos--titulo">
-            <h2 id="secos">Secos</h2>
-          </div>
-
-          <!-- Inicio cards para items de comida -->
-
-          <div
-            class="container-fluid dogsFood__secos--margin masVendidos__productos"
-          >
-            <!-- Primer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
+        <section class="mainIndex__masVendidos container-fluid">
+          <div class="row justify-content-center">
+            <div class="masVendidos__titulo col-12 tipoAlimento__titulo">
+              <h2>Secos</h2>
             </div>
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+            <div class="masVendidos__productos row col-12">
+              <!-- Primer producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/EukanubaAdulto1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/EukanubaAdultoDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Eukanuba Adulto</h5>
+                      <p class="card-text">Alimento para perro adulto</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+                    <!-- <img src="images/imgProductos/EukanubaAdulto1.png" alt="" /> -->
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators1"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto3.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span class="modalSpan">Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>1 Kg, 3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Segundo producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
+              <!-- Segundo producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/OldPrinceCachorro1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/OldPrinceDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Old Prince Cachorro</h5>
+                      <p class="card-text">Alimento para perro cachorro</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators2"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators2"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators2"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/OldPrinceCachorro1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/OldPrinceCachorro2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Old Prince Cachorro.</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas y grandes:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Tercer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+              <!-- Tercer producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/VitalCanSenior1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/VitalCanDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Vital Can Senior</h5>
+                      <p class="card-text">Alimento para perro Senior</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators3"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/VitalCanSenior1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/VitalCanSenior2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/VitalCanSenior3.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas:
+                          <p>3 Kg, 12 Kg, 20 Kg</p>
+                        </li>
+                        <li>
+                          Razas Grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Cuarto producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
+              <!-- Cuarto producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/PurinaProPlanLight1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/PurinaProDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Purina Pro Plan Light</h5>
+                      <p class="card-text">
+                        Alimento para perro reducido en calorias
+                      </p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators4"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators4"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators4"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/PurinaProPlanLight1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/PurinaProPlanLight2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>1 Kg, 3 Kg, 7,5 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas y grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -498,328 +786,625 @@
         <div class="linkGatosFood__seco--div">
           <a href="" class="linkGatosFood__seco--a">Ver más</a>
         </div>
-        <section class="dogsFood__secos">
-          <div class="col-12 dogsFood__secos--titulo">
-            <h2 id="humedos">Húmedos</h2>
-          </div>
-
-          <!-- Inicio cards para items de comida -->
-
-          <div
-            class="container-fluid dogsFood__secos--margin masVendidos__productos"
-          >
-            <!-- Primer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
+        <section class="mainIndex__masVendidos container-fluid">
+          <div class="row justify-content-center">
+            <div class="masVendidos__titulo col-12 tipoAlimento__titulo">
+              <h2>Húmedos</h2>
             </div>
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+            <div class="masVendidos__productos row col-12">
+              <!-- Primer producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/EukanubaAdulto1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/EukanubaAdultoDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Eukanuba Adulto</h5>
+                      <p class="card-text">Alimento para perro adulto</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+                    <!-- <img src="images/imgProductos/EukanubaAdulto1.png" alt="" /> -->
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators1"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators1"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/EukanubaAdulto3.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators1"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span class="modalSpan">Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>1 Kg, 3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Segundo producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
+              <!-- Segundo producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/OldPrinceCachorro1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/OldPrinceDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Old Prince Cachorro</h5>
+                      <p class="card-text">Alimento para perro cachorro</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators2"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators2"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators2"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/OldPrinceCachorro1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/OldPrinceCachorro2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Old Prince Cachorro.</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas y grandes:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Tercer producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+              <!-- Tercer producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/VitalCanSenior1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/VitalCanDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Vital Can Senior</h5>
+                      <p class="card-text">Alimento para perro Senior</p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators3"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators3"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/VitalCanSenior1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/VitalCanSenior2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/VitalCanSenior3.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>3 Kg, 7,5 Kg, 15 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas:
+                          <p>3 Kg, 12 Kg, 20 Kg</p>
+                        </li>
+                        <li>
+                          Razas Grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Cuarto producto -->
-            <div class="producto">
-              <button
-                type="button"
-                class="btn"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="card productoCard">
-                  <img
-                    src="images/producto.png"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Buenar Dog Premium</h5>
-                    <p class="card-text">Alimento para perro adulto mediano</p>
-                  </div>
-                </div>
-              </button>
-              <a
-                href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                  Buenar Dog Premium"
-                target="_blank"
-                >Comprar</a
-              >
-            </div>
+              <!-- Cuarto producto -->
+              <div class="producto producto--size col-6 col-md-2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4"
+                >
+                  <div class="card productoCard">
+                    <img
+                      src="images/imgProductos/PurinaProPlanLight1.png"
+                      class="card-img-top d-md-none"
+                      alt="..."
+                    />
+                    <img
+                      src="images/imgProductos/PurinaProDesktop.svg"
+                      class="card-img-top d-md-block d-none"
+                      alt="..."
+                    />
 
-            <!-- Modal -->
-            <div
-              class="modal fade modalProducto"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modalProducto__titulo">
-                    <button
-                      type="button"
-                      class=""
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </button>
-                    <h2>Buenar Dog Premium</h2>
-                  </div>
-                  <img src="images/producto.png" alt="" />
-                  <p>
-                    Todo lo que tu mascota necesita para una nutrición
-                    completa.Rico en proteínas fáciles de digerir, para caninos
-                    adultos gammers.
-                  </p>
-                  <div class="seleccionPeso">
-                    <h3>Sleccione Peso Alimento</h3>
-                    <div>
-                      <div>
-                        <input type="button" value="3kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="5kg" />
-                      </div>
-                      <div>
-                        <input type="button" value="15kg" />
-                      </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Purina Pro Plan Light</h5>
+                      <p class="card-text">
+                        Alimento para perro reducido en calorias
+                      </p>
                     </div>
                   </div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                      Buenar Dog Premium"
-                    target="_blank"
-                    >Comprar</a
-                  >
+                </button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                Buenar Dog Premium"
+                  target="_blank"
+                  >Comprar</a
+                >
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade modalProducto"
+                id="exampleModal4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modalProducto__titulo">
+                      <button
+                        type="button"
+                        class=""
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </button>
+                      <h2>Buenar Dog Premium</h2>
+                    </div>
+
+                    <!-- Carousel de imagenes de los productos -->
+
+                    <div
+                      id="carouselExampleIndicators4"
+                      class="carousel slide carouselProductos"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators4"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators4"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="images/imgProductos/PurinaProPlanLight1.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="images/imgProductos/PurinaProPlanLight2.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators4"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                    <h4>Alimento para perro Eukanuba Adulto</h4>
+                    <span>Disponible en: </span>
+                    <div class="infoPesos">
+                      <ul>
+                        <li>
+                          Razas Pequeñas:
+                          <p>1 Kg, 3 Kg, 7,5 Kg</p>
+                        </li>
+                        <li>
+                          Razas Medianas y grandes:
+                          <p>3 Kg, 15 Kg</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
+                    Buenar Dog Premium"
+                      target="_blank"
+                      >Comprar</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
