@@ -651,33 +651,73 @@
     </section>
 
     <section class="mainIndex__bannerBienvenido container-fluid">
-      <a href="">
+      <a class="d-md-none" href="">
         <img src="images/imgProductos/BannerKitBienvenida.png" alt="">
+      </a>
+      <a class="d-md-block d-none" href="">
+        <img src="images/imgProductos/BannerKitBienvenida2.svg" alt="">
       </a>
     </section>
 
     <section class="mainIndex__bannerCupon container-fluid">
-      <img src="images/imgProductos/BannerCupon.png" alt="" />
-      <a href="">QUIERO MI CUPÓN</a>
+      <img class="d-md-none" src="images/imgProductos/BannerCupon.png" alt="" />
+      <a class="d-md-none" href="">QUIERO MI CUPÓN</a>
+      <img class="d-md-block d-none" src="images/imgProductos/BannerCupon2.svg" alt="" />
+      <a class="d-md-block d-none" href="">¡QUIERO MI CUPÓN!</a>
     </section>
   </main>
 
-  <footer class="footerIndex">
-    <a href="">INICIO</a>
-    <a href="">NOSOTROS</a>
-    <a href="">CONTACTO</a>
-    <a href="preguntas.html">PREGUNTAS FRECUENTES</a>
-    <a href="">GATOS</a>
-    <a href="">PERROS</a>
-    <a href="">ACCESORIOS</a>
-    <a href="">DIRECCIÓN</a>
-    <p>Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+  <footer class="footerIndex d-md-none">
+    <a class="footerIndex__a" href="">INICIO</a>
+    <a class="footerIndex__a" href="">NOSOTROS</a>
+    <a class="footerIndex__a" href="">CONTACTO</a>
+    <a class="footerIndex__a" href="preguntas.html">PREGUNTAS FRECUENTES</a>
+    <a class="footerIndex__a" href="">GATOS</a>
+    <a class="footerIndex__a" href="">PERROS</a>
+    <a class="footerIndex__a" href="">ACCESORIOS</a>
+    <a class="footerIndex__a" href="">DIRECCIÓN</a>
+    <p class="footerIndex__p">Tucuman 99 - Lomas de Zamora Buenos Aires</p>
 
-    <div>
+    <div class="logosFooterContainer">
       <ion-icon name="logo-instagram"></ion-icon>
       <ion-icon name="logo-facebook"></ion-icon>
     </div>
   </footer>
+
+  <footer class="footerIndex d-md-flex d-none">
+    <div class="footerSeccionesContainer">
+      <div>
+        <h4>CATEGORIAS</h4>
+        <a href="">Gatos</a>
+        <a href="layout/perros/alimento/index.html">Perros</a>
+        <a href="">Otras mascotas</a>
+        <a href="">Accesorios</a>
+      </div>
+      <div>
+        <h4>AYUDA</h4>
+        <a href="">Formas de pago</a>
+        <a href="">Medios de envío</a>
+        <a href="">¿Cómo comprar?</a>
+        <a href="">Cambios y devoluciones</a>
+        <a href="">Registrate</a>
+      </div>
+      <div>
+        <h4>ATENCIÓN AL CLIENTE</h4>
+        <a href="">Contacto</a>
+        <a href="">¿Cómo llegar?</a>
+        <a href="">Sucursales</a>
+      </div>
+    </div>
+    <p>Dirección: Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+    <h3>NUESTRAS REDES</h3>
+    <div>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+    <img src="images/LogoFooter.svg" alt="">
+    <span>Desde 2021</span>
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

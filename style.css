@@ -577,18 +577,18 @@ body {
   color: var(--button--accordion);
 }
 
-.footerIndex a {
+.footerIndex .footerIndex__a {
   text-decoration: none;
   color: var(--button--accordion);
   font-weight: 700;
 }
 
-.footerIndex p {
+.footerIndex .footerIndex__p {
   padding: 0 3rem;
   font-weight: 700;
 }
 
-.footerIndex div {
+.footerIndex .logosFooterContainer {
   display: flex;
   justify-content: space-between;
   width: 25%;
@@ -792,7 +792,7 @@ body {
 
   .mainIndex__carrousel {
     padding: 0;
-    height: 36vh;
+    height: 43vh;
   }
 
   .carrouselPrincipal {
@@ -903,6 +903,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+  .producto .btn:hover {
+    color: var(--negro) !important
+  }
+
   .producto--size {
     width: 30% !important;
     height: 376px !important;
@@ -912,4 +916,181 @@ body {
   /* .productos__cards--size {
     justify-content: flex-start !important;
   } */
+
+
+  /* ========================================================================================================= */
+  /* MAIN BANNER CHICO */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerChico {
+    padding: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainIndex__bannerChico div {
+    border: 1px solid transparent;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainIndex__bannerChico p {
+    background: #999999;
+    border-radius: .5rem;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+    color: var(--blanco);
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+
+  /* ========================================================================================================= */
+  /* MAIN BANNER BIENVENIDO */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerBienvenido {
+    padding: 0;
+    height: 100%;
+    background: transparent;
+    margin-bottom: 10rem;
+  }
+
+  .mainIndex__bannerBienvenido img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .mainIndex__bannerBienvenido a {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ========================================================================================================= */
+  /* MAIN BANNER CUPON */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerCupon {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+  }
+
+  .mainIndex__bannerCupon img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .mainIndex__bannerCupon a {
+    position: absolute;
+    bottom: 14%;
+    right: 15%;
+    text-align: center;
+    text-decoration: none;
+    width: 45%;
+    padding: 0.2rem 1rem;
+    color: var(--negro);
+    font-size: 2rem;
+    border: 1px solid var(--blanco);
+    background: #AFAFAF;
+    border-radius: .5rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+
+  /* ========================================================================================================= */
+  /*     FOOTER     */
+  /* ========================================================================================================= */
+
+  .footerIndex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    background: transparent;
+    color: var(--negro);
+  }
+
+  .footerSeccionesContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 5rem;
+    justify-content: space-evenly;
+  }
+
+  .footerSeccionesContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footerSeccionesContainer h4 {
+    font-weight: 900;
+  }
+
+  .footerSeccionesContainer a {
+    margin-bottom: .5rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--negro);
+  }
+
+  .footerIndex p {
+    padding: 0 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .footerIndex h3 {
+    font-weight: 900;
+  }
+
+  .footerIndex .footerIndex__a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 700;
+  }
+
+  .footerIndex .footerIndex__p {
+    padding: 0 3rem;
+    font-weight: 700;
+  }
+
+  .footerIndex .logosFooterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .footerIndex ion-icon {
+    width: 2rem;
+    height: 3rem;
+  }
+
+  .footerIndex span {
+    color: #969696;
+    font-weight: 900;
+  }
+
+
+
 }
