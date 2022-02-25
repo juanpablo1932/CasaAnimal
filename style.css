@@ -659,6 +659,10 @@ body {
   max-height: 120px;
 }
 
+.modal__img-mobile--size {
+  height: 18rem !important;
+}
+
 .linkGatosFood__seco--a {
   color: #551a8b;
   text-decoration: none;
