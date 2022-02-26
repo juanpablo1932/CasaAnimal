@@ -603,7 +603,7 @@ body {
 }
 
 /* ========================================================================================================= */
-/* PERROS ALIMENTO */
+/* LAYOUT */
 /* ========================================================================================================= */
 
 .mainDogsFood__section {
@@ -655,6 +655,15 @@ body {
 
 .producto .card-text {
   font-size: 12px !important;
+}
+
+.card__img-mobile--size {
+  height: 120px;
+  max-height: 120px;
+}
+
+.modal__img-mobile--size {
+  height: 18rem !important;
 }
 
 .linkGatosFood__seco--a {
