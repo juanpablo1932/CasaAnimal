@@ -461,6 +461,14 @@ body {
   align-self: center;
 }
 
+.carouselProductos .carousel-item {
+  width: 85%;
+}
+
+.carouselProductos .carousel-inner {
+  padding: 0 0 0 3rem;
+}
+
 .modalProducto .modal-content h4 {
   font-weight: 600;
   font-size: 0.9rem;
