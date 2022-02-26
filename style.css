@@ -1297,6 +1297,46 @@ body {
   }
 
   /* ========================================================================================================= */
+  /*         PREGUNTAS FRECUENTES             */
+  /* ========================================================================================================= */
+
+  .mainPreguntas {
+    font-family: "Roboto", sans-serif;
+    padding: 7.5rem 4rem;
+    position: relative;
+  }
+
+  .mainPreguntas h3 {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+  }
+
+  .pGenerales {
+    font-size: 1rem;
+  }
+
+  .dudasParticulares {
+    width: 50%;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .imgCasaAnimalDesktopPreguntas {
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    width: 10%;
+  }
+
+  .sectionBannerPreguntas {
+    background-color: #08DDB8;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ========================================================================================================= */
   /*     FOOTER     */
   /* ========================================================================================================= */
 

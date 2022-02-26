@@ -15,13 +15,26 @@
 </head>
 
 <body>
+  <div class="imgWhatsApp">
+    <a href="">
+      <img src="images/whatsapp.png" alt="">
+    </a>
+  </div>
   <header class="headerIndex">
-    <button class="btn headerMenuButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuModal"
+
+    <!-- HEADER MOBILE -->
+
+    <button class="btn headerMenuButton d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuModal"
       aria-controls="menuModal">
       <ion-icon name="menu-outline"></ion-icon>
     </button>
+    <div class="logoCasaMobile d-md-none">
+      <a href="">
+        <img src="images/LogoCasaAnimalMobile.svg" alt="">
+      </a>
+    </div>
 
-    <div class="offcanvas offcanvas-start headerMenu" tabindex="-1" id="menuModal"
+    <div class="offcanvas offcanvas-start headerMenu d-md-none" tabindex="-1" id="menuModal"
       aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-body">
         <!-- COMIENZO DEL ACORDEON DEL MENÚ -->
@@ -42,6 +55,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -52,12 +66,13 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <a href="./layout/perros/alimento">Alimento</a>
-                <a href="./layout/perros/salud">Salud</a>
-                <a href="./layout/perros/golosinas">Golosinas</a>
+                <a href="./layout/gatos/alimento">Alimento</a>
+                <a href="./layout/gatos/salud">Salud</a>
+                <a href="./layout/gatos/golosinas">Golosinas</a>
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -70,28 +85,115 @@
               <div class="accordion-body"></div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Accesorios
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
+
+    <!-- HEADER DESKTOP -->
+
+    <div class="headerLogoDesktop d-none d-md-block">
+      <a href="./index.html">
+        <img src="images/logoHeaderDesktop.svg" alt="">
+      </a>
+    </div>
+    <div class="menuDesktop d-none d-md-block">
+      <ul>
+        <li>Perros
+          <div class="menuDesktopPerros">
+            <div class="menuDesktopPerrosContenedores">
+              <div>
+                <a href="./layout/perros/alimento/index.html">
+                  <h5>Alimento</h5>
+                </a>
+                <a href="./layout/perros/alimento/index.html">
+                  <p>Secos</p>
+                </a>
+                <a href="./layout/perros/alimento/index.html">
+                  <p>Húmedos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/perros/salud/index.html">
+                  <h5>Salud</h5>
+                </a>
+                <a href="./layout/perros/salud/index.html">
+                  <p>Pipetas</p>
+                </a>
+                <a href="./layout/perros/salud/index.html">
+                  <p>Medicamentos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/perros/golosinas/">
+                  <h5>Golosinas</h5>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+              </div>
+            </div>
+            <img src="images/perritoMenu.svg" alt="">
+          </div>
+        </li>
+        <li>Gatos
+          <div class="menuDesktopGatos">
+            <div class="menuDesktopGatosContenedores">
+              <div>
+                <a href="./layout/gatos/alimento/">
+                  <h5>Alimento</h5>
+                </a>
+                <a href="./layout/gatos/alimento/">
+                  <p>Secos</p>
+                </a>
+                <a href="./layout/gatos/alimento/">
+                  <p>Húmedos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/gatos/salud/">
+                  <h5>Salud</h5>
+                </a>
+                <a href="./layout/gatos/salud/">
+                  <p>Pipetas</p>
+                </a>
+                <a href="./layout/gatos/salud/">
+                  <p>Medicamentos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/gatos/golosinas/">
+                  <h5>Golosinas</h5>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+              </div>
+            </div>
+            <img src="images/gatitoMenu.svg" alt="">
+          </div>
+        </li>
+        <li>Accesorios</li>
+        <li>Otras mascotas</li>
+      </ul>
+
+
+    </div>
+
   </header>
 
+
   <main class="mainPreguntas container-fluid">
+    <img class="imgCasaAnimalDesktopPreguntas d-md-block d-none" src="images/logoCasaAnimalPreguntas.svg" alt="">
     <h2>Nosotros</h2>
     <div class="vision">
       <h3>Nuestra visión</h3>
-      <p>
+      <p class="pGenerales">
         Amamos a las mascotas y sabemos lo importante que son para vos. Por
         estos motivos, todos los días buscamos mejorar su calidad de vida y la
         integración con su familia.
@@ -100,7 +202,7 @@
 
     <div class="mision">
       <h3>Nuestra misión</h3>
-      <p>
+      <p class="pGenerales">
         Brindar la mejor atención a nuestros clientes, ofreciendo
         asesoramiento, productos y servicios de calidad para cada etapa de la
         vida de tu mascota. Queremos lograr que todos compartan nuestra pasión
@@ -112,7 +214,7 @@
     <h2>Preguntas frecuentes</h2>
     <div class="mediosPago">
       <h3>¿Cuáles son los medios de pago?</h3>
-      <p>Podes abonar tus compras con los siguientes medios de pago:</p>
+      <p class="pGenerales">Podes abonar tus compras con los siguientes medios de pago:</p>
       <ul>
         <li>Efectivo</li>
         <li>Tarjeta de débito</li>
@@ -126,16 +228,16 @@
 
     <div class="comoComprar">
       <h3>¿Cómo comprar?</h3>
-      <p>
+      <p class="pGenerales">
         Todos los productos están detallados en raza, tamaño del animal, etapa
         de vida y peso del envase.
       </p>
-      <p>
+      <p class="pGenerales">
         Elegí el producto deseado y hace clic en el botón comprar. A partir de
         ese momento se abrirá una sesión de WhatsApp en la cual recibirás el
         asesoramiento adecuado para finalizar la operación.
       </p>
-      <p>
+      <p class="pGenerales">
         Acorda el medio de pago, la forma de entrega del producto (retiro en
         el local o envío a domicilio) y confirma tu orden.
       </p>
@@ -144,7 +246,7 @@
 
     <div class="cambios-devoluciones">
       <h3>Cambios y devoluciones</h3>
-      <p>
+      <p class="pGenerales">
         Buscamos que tu experiencia a la hora de elegirnos sea la mejor. Por
         eso, en caso de que tengas algún inconveniente con tu compra, te
         ofrecemos las siguientes alternativas de cambio:
@@ -153,7 +255,7 @@
 
     <div class="cambio-gratuito">
       <h4>Cambio gratuito de alimentos en nuestra sucursal:</h4>
-      <p>
+      <p class="pGenerales">
         Si deseas cambiar el alimento que adquiriste para tu mascota por otro,
         acércate a nuestra sucursal con el producto cerrado y en perfectas
         condiciones.
@@ -163,7 +265,7 @@
 
     <div class="cambio-accesorios">
       <h4>Cambio gratuito de accesorios en nuestra sucursal:</h4>
-      <p>
+      <p class="pGenerales">
         Tenes hasta 5 días luego de recibir el pedido para realizar el cambio
         en nuestra sucursal. Debes presentarte con el producto sin uso y en
         buenas condiciones.
@@ -172,7 +274,7 @@
 
     <div class="cambio-online">
       <h4>Cambio online:</h4>
-      <p>
+      <p class="pGenerales">
         Podes realizarlo dentro de los cinco (5) días corridos desde la fecha
         en que recibiste el producto. Contáctanos a nuestro WhatsApp para
         acordar el cambio.
@@ -181,14 +283,14 @@
     </div>
 
     <h2>Envíos</h2>
-    <p>
+    <p class="pGenerales">
       Casa Animal te ofrece distintas alternativas para poder acceder al
       producto deseado.
     </p>
 
     <div class="retiro-sin-cargo">
       <h3>Retiro sin cargo en nuestra sucursal:</h3>
-      <p>
+      <p class="pGenerales">
         Acorda con el asesor el día y horario en el que retiraras el producto.
       </p>
     </div>
@@ -198,7 +300,7 @@
         Envío a domicilio sin cargo dentro de la zona de entrega en compras
         mayores a $2.000:
       </h3>
-      <p>
+      <p class="pGenerales">
         Consulta en este sitio la zona de entrega. Si tenes dudas o no
         encontras tu domicilio, contáctanos a través de WhatsApp.
       </p>
@@ -206,26 +308,26 @@
 
     <div class="compras-menores">
       <h3>Compras menores a $2.000:</h3>
-      <p>Consulta a nuestros asesores la forma de envío, tiempos y costo.</p>
+      <p class="pGenerales">Consulta a nuestros asesores la forma de envío, tiempos y costo.</p>
     </div>
 
     <div class="tener-en-cuenta">
       <h3>Aspectos a tener en cuenta para el envío:</h3>
-      <p>
+      <p class="pGenerales">
         Si realizas tu pedido de lunes a sábados antes de las 12 hs. podes
         recibir el producto en tu domicilio el mismo día, a partir de las 18
         hs.
       </p>
-      <p>
+      <p class="pGenerales">
         Si realizas tu pedido de lunes a sábados después de las 12 hs, lo
         recibís al día siguiente.
       </p>
-      <p>
+      <p class="pGenerales">
         Los pedidos realizados los sábados a partir de las 12 hs y domingos se
         entregarán el día lunes.
       </p>
       <p>No se realizarán envíos los días feriados.</p>
-      <p>
+      <p class="pGenerales">
         Si tenés dudas o una situación particular, escríbinos a nuestro
         WhatsApp.
       </p>
@@ -233,31 +335,71 @@
 
     <div class="area-entrega">
       <h3>Zona/Área de entrega</h3>
-      <p>
+      <p class="pGenerales">
         Consulta la zona de entrega. Si no encontrás tu domicilio o tenés
         dudas, escríbinos a nuestro WhatsApp y recibirás el asesoramiento
         adecuado.
       </p>
     </div>
 
-    <h2>Contacto</h2>
+    <p class="dudasParticulares d-md-block d-none">Si tenés dudas o una situación particular, escríbinos a nuestro
+      WhatsApp.
+    </p>
+
   </main>
+  <section class="sectionBannerPreguntas d-md-flex d-none">
+    <img src="images/LogoFooter.svg" alt="">
+  </section>
+  <footer class="footerIndex d-md-none">
+    <a class="footerIndex__a" href="./index.html">INICIO</a>
+    <a class="footerIndex__a" href="preguntas.html">NOSOTROS</a>
+    <a class="footerIndex__a" href="preguntas.html">CONTACTO</a>
+    <a class="footerIndex__a" href="preguntas.html">PREGUNTAS FRECUENTES</a>
+    <a class="footerIndex__a" href="./layout/gatos/alimento/">GATOS</a>
+    <a class="footerIndex__a" href="./layout/perros/alimento/">PERROS</a>
+    <a class="footerIndex__a" href="preguntas.html">DIRECCIÓN</a>
+    <p class="footerIndex__p">Tucuman 99 - Lomas de Zamora Buenos Aires</p>
 
-  <footer class="footerIndex">
-    <a href="index.html">INICIO</a>
-    <a href="">NOSOTROS</a>
-    <a href="">CONTACTO</a>
-    <a href="">PREGUNTAS FRECUENTES</a>
-    <a href="">GATOS</a>
-    <a href="">PERROS</a>
-    <a href="">ACCESORIOS</a>
-    <a href="">DIRECCIÓN</a>
-    <p>Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+    <div class="logosFooterContainer">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+  </footer>
 
+  <footer class="footerIndex d-md-flex d-none">
+    <img class="imgFooterGatito" src="images/CAT23 1.svg" alt="">
+    <div class="footerSeccionesContainer">
+      <div>
+        <h4>CATEGORIAS</h4>
+        <a href="layout/gatos/alimento/index.html">Gatos</a>
+        <a href="layout/perros/alimento/index.html">Perros</a>
+        <a href="">Otras mascotas</a>
+      </div>
+      <div>
+        <h4>AYUDA</h4>
+        <a href="./preguntas.html">Formas de pago</a>
+        <a href="./preguntas.html">Medios de envío</a>
+        <a href="./preguntas.html">¿Cómo comprar?</a>
+        <a href="./preguntas.html">Cambios y devoluciones</a>
+        <a href="./preguntas.html">Registrate</a>
+      </div>
+      <div>
+        <h4>ATENCIÓN AL CLIENTE</h4>
+        <a href="./preguntas.html">Contacto</a>
+        <a href="./preguntas.html">¿Cómo llegar?</a>
+        <a href="./preguntas.html">Sucursales</a>
+      </div>
+    </div>
+    <p>Dirección: Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+    <h3>NUESTRAS REDES</h3>
     <div>
       <ion-icon name="logo-instagram"></ion-icon>
       <ion-icon name="logo-facebook"></ion-icon>
     </div>
+    <a href="./index.html">
+      <img src="images/LogoFooter.svg" alt="">
+    </a>
+    <span>Desde 2021</span>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
