@@ -300,7 +300,6 @@ body {
   background: transparent;
 }
 
-
 /* ========================================================================================================= */
 /*   MAIN MAS VENDIDOS   */
 /* ========================================================================================================= */
@@ -809,7 +808,7 @@ body {
   }
 
   .headerLogoDesktop {
-    background: #FEFFE9;
+    background: #feffe9;
     width: 100%;
     height: 100%;
     color: var(--blanco);
@@ -835,7 +834,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    background: #0A847E;
+    background: #0a847e;
   }
 
   .menuDesktop li {
@@ -848,13 +847,12 @@ body {
     color: var(--blanco);
   }
 
-
   .menuDesktop li:hover {
-    background: #08DDB8;
+    background: #08ddb8;
   }
 
-  .menuDesktop li:hover>.menuDesktopPerros,
-  .menuDesktop li:hover>.menuDesktopGatos {
+  .menuDesktop li:hover > .menuDesktopPerros,
+  .menuDesktop li:hover > .menuDesktopGatos {
     display: flex;
   }
 
@@ -863,7 +861,7 @@ body {
     position: fixed;
     display: none;
     width: 65%;
-    background: #EFEBE2;
+    background: #efebe2;
     color: var(--negro);
   }
 
@@ -902,6 +900,85 @@ body {
     justify-content: center;
   }
 
+  .menuDesktopPerrosContenedores p,
+  .menuDesktopGatosContenedores p {
+    font-weight: 200;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuDesktopPerrosContenedores h5:hover,
+  .menuDesktopGatosContenedores h5:hover,
+  .menuDesktopPerrosContenedores p:hover,
+  .menuDesktopGatosContenedores p:hover {
+    background: #08ddb8;
+  }
+
+  .menuDesktopPerrosContenedores div:nth-child(3) p,
+  .menuDesktopGatosContenedores div:nth-child(3) p {
+    background: transparent;
+  }
+
+  .menuDesktopGatos {
+    left: 15%;
+  }
+
+  .menuDesktop li:hover {
+    background: #08ddb8;
+  }
+
+  .menuDesktop li:hover > .menuDesktopPerros,
+  .menuDesktop li:hover > .menuDesktopGatos {
+    display: flex;
+  }
+
+  .menuDesktopPerros,
+  .menuDesktopGatos {
+    position: fixed;
+    display: none;
+    width: 65%;
+    background: #efebe2;
+    color: var(--negro);
+  }
+
+  .menuDesktopPerros a,
+  .menuDesktopGatos a {
+    text-decoration: none;
+    color: var(--negro);
+    width: 100%;
+    height: 100%;
+  }
+
+  .menuDesktopPerrosContenedores,
+  .menuDesktopGatosContenedores {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menuDesktopPerrosContenedores div,
+  .menuDesktopGatosContenedores div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .menuDesktopPerrosContenedores h5,
+  .menuDesktopGatosContenedores h5 {
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .menuDesktopPerrosContenedores p,
   .menuDesktopGatosContenedores p {
@@ -918,7 +995,7 @@ body {
   .menuDesktopGatosContenedores h5:hover,
   .menuDesktopPerrosContenedores p:hover,
   .menuDesktopGatosContenedores p:hover {
-    background: #08DDB8;
+    background: #08ddb8;
   }
 
   .menuDesktopPerrosContenedores div:nth-child(3) p,
@@ -929,7 +1006,6 @@ body {
   .menuDesktopGatos {
     left: 15%;
   }
-
 
   /* ========================================================================================================= */
   /*   MAIN   */
@@ -1059,15 +1135,14 @@ body {
     width: 85%;
     padding: 0.2rem 2rem;
     color: var(--blanco);
-    background: #F89DFF;
+    background: #f89dff;
     border-radius: 3px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .producto .btn:hover {
-    color: var(--negro) !important
+    color: var(--negro) !important;
   }
-
 
   .productoCard .card-body {
     padding: 0;
@@ -1087,7 +1162,6 @@ body {
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
   }
-
 
   .modalProducto {
     padding: 0;
@@ -1137,7 +1211,7 @@ body {
 
   .carousel-indicators [data-bs-target] {
     border: none;
-    background: #BEA4FF;
+    background: #bea4ff;
   }
 
   .modalProducto .modal-dialog {
@@ -1163,7 +1237,6 @@ body {
     font-weight: 900;
   }
 
-
   .modalProducto .modal-content a {
     text-align: center;
     display: flex;
@@ -1175,17 +1248,15 @@ body {
     height: 6%;
     padding: 0.2rem 2rem;
     color: var(--blanco);
-    background: #F89DFF;
+    background: #f89dff;
     border-radius: 8px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
   }
 
   .modal-content p {
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: gray;
   }
-
 
   .producto--size {
     width: 30% !important;
@@ -1193,4 +1264,248 @@ body {
     margin: 1rem 1% 1rem 2% !important;
   }
 
+  /* .productos__cards--size {
+    justify-content: flex-start !important;
+  } */
 
+  /* ========================================================================================================= */
+  /* MAIN BANNER CHICO */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerChico {
+    padding: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainIndex__bannerChico div {
+    border: 1px solid transparent;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainIndex__bannerChico p {
+    background: #f89dff;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+    color: var(--blanco);
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  /* ========================================================================================================= */
+  /* MAIN BANNER BIENVENIDO */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerBienvenido {
+    padding: 0;
+    height: 100%;
+    background: transparent;
+    margin-bottom: 0;
+    background: #9752da;
+    height: 40vh;
+  }
+
+  .mainIndex__bannerBienvenido a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bannerBienvenidoContainerImg {
+    position: relative;
+  }
+
+  .bannerBienvenidoImg1,
+  .bannerBienvenidoImg2 {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .bannerBienvenidoImg1 {
+    width: 55%;
+    bottom: 0;
+    left: 25%;
+  }
+
+  .bannerBienvenidoImg2 {
+    width: 50%;
+    top: 0;
+    left: 25%;
+  }
+
+  .bannerProductosDeCalidad {
+    height: 10vh;
+    background: #08ddb8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .bannerProductosDeCalidad h2 {
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  /* ========================================================================================================= */
+  /* MAIN BANNER CUPON */
+  /* ========================================================================================================= */
+
+  .mainIndex__bannerCupon {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+  }
+
+  .mainIndex__bannerCupon img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* ========================================================================================================= */
+  /*         PREGUNTAS FRECUENTES             */
+  /* ========================================================================================================= */
+
+  .mainPreguntas {
+    font-family: "Roboto", sans-serif;
+    padding: 7.5rem 4rem;
+    position: relative;
+  }
+
+  .mainPreguntas h3 {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+  }
+
+  .pGenerales {
+    font-size: 1rem;
+  }
+
+  .dudasParticulares {
+    width: 50%;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .imgCasaAnimalDesktopPreguntas {
+    position: absolute;
+    top: 2%;
+    left: 45%;
+    width: 10%;
+  }
+
+  .sectionBannerPreguntas {
+    background-color: #08ddb8;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ========================================================================================================= */
+  /*     FOOTER     */
+  /* ========================================================================================================= */
+
+  .footerIndex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    background: transparent;
+    color: #0a847e;
+    position: relative;
+  }
+
+  .imgFooterGatito {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+  }
+
+  .footerSeccionesContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 5rem;
+    justify-content: space-evenly;
+  }
+
+  .footerSeccionesContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footerSeccionesContainer h4 {
+    font-weight: 900;
+  }
+
+  .footerSeccionesContainer a {
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: #0a847e;
+  }
+
+  .footerIndex p {
+    padding: 0 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .footerIndex h3 {
+    font-weight: 900;
+  }
+
+  .footerIndex .footerIndex__a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 700;
+  }
+
+  .footerIndex .footerIndex__p {
+    padding: 0 3rem;
+    font-weight: 700;
+  }
+
+  .footerIndex .logosFooterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .footerIndex ion-icon {
+    width: 2rem;
+    height: 3rem;
+  }
+
+  .footerIndex span {
+    color: #969696;
+    font-weight: 900;
+  }
+
+  .producto--size .btn .productoCard {
+    height: 300px;
+  }
+}
