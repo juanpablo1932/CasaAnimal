@@ -16,6 +16,12 @@
 </head>
 
 <body>
+  <div class="imgWhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, quisiera consultarles sobre lo siguiente:"
+      target="_blank">
+      <img src="images/whatsapp.png" alt="">
+    </a>
+  </div>
   <header class="headerIndex">
 
     <!-- HEADER MOBILE -->
@@ -24,6 +30,11 @@
       aria-controls="menuModal">
       <ion-icon name="menu-outline"></ion-icon>
     </button>
+    <div class="logoCasaMobile d-md-none">
+      <a href="">
+        <img src="images/LogoCasaAnimalMobile.svg" alt="">
+      </a>
+    </div>
 
     <div class="offcanvas offcanvas-start headerMenu d-md-none" tabindex="-1" id="menuModal"
       aria-labelledby="offcanvasExampleLabel">
@@ -83,15 +94,97 @@
     <!-- HEADER DESKTOP -->
 
     <div class="headerLogoDesktop d-none d-md-block">
-      CASA ANIMAL
+      <a href="./index.html">
+        <img src="images/logoHeaderDesktop.svg" alt="">
+      </a>
     </div>
     <div class="menuDesktop d-none d-md-block">
       <ul>
-        <li>Perros</li>
-        <li>Gatos</li>
+        <li>Perros
+          <div class="menuDesktopPerros">
+            <div class="menuDesktopPerrosContenedores">
+              <div>
+                <a href="./layout/perros/alimento/">
+                  <h5>Alimento</h5>
+                </a>
+                <a href="./layout/perros/alimento/">
+                  <p>Secos</p>
+                </a>
+                <a href="./layout/perros/alimento/">
+                  <p>Húmedos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/perros/salud/">
+                  <h5>Salud</h5>
+                </a>
+                <a href="./layout/perros/salud/">
+                  <p>Pipetas</p>
+                </a>
+                <a href="./layout/perros/salud/">
+                  <p>Medicamentos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/perros/golosinas/">
+                  <h5>Golosinas</h5>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+              </div>
+            </div>
+            <img src="images/perritoMenu.svg" alt="">
+          </div>
+        </li>
+        <li>Gatos
+          <div class="menuDesktopGatos">
+            <div class="menuDesktopGatosContenedores">
+              <div>
+                <a href="./layout/gatos/alimento/">
+                  <h5>Alimento</h5>
+                </a>
+                <a href="./layout/gatos/alimento/">
+                  <p>Secos</p>
+                </a>
+                <a href="./layout/gatos/alimento/">
+                  <p>Húmedos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/gatos/salud/">
+                  <h5>Salud</h5>
+                </a>
+                <a href="./layout/gatos/salud/">
+                  <p>Pipetas</p>
+                </a>
+                <a href="./layout/gatos/salud/">
+                  <p>Medicamentos</p>
+                </a>
+              </div>
+              <div>
+                <a href="./layout/gatos/golosinas/">
+                  <h5>Golosinas</h5>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+                <a href="">
+                  <p class="pNoVisiblesMenu"></p>
+                </a>
+              </div>
+            </div>
+            <img src="images/gatitoMenu.svg" alt="">
+          </div>
+        </li>
         <li>Accesorios</li>
         <li>Otras mascotas</li>
       </ul>
+
+
     </div>
 
   </header>
@@ -111,13 +204,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/DescuentoBienvenida.png" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/DescuentoBienvenida.svg" class="d-block" alt="..." />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="images/EnviosGratisCabaYGranBsAs.jpg" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/EnviosGratisCabaYGranBsAs.svg" class="d-block" alt="..." />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="images/PromocionesPerrosYGatos.jpg" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/bannerVentaDeAlimentos.svg" class="d-block" alt="..." />
+            </a>
           </div>
         </div>
 
@@ -146,13 +245,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/desktopImg/bannerEnviosGratis.svg" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/desktopImg/bannerEnviosGratis.svg" class="d-block" alt="..." />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="images/desktopImg/bannerBienvenida.svg" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/desktopImg/bannerBienvenida.svg" class="d-block" alt="..." />
+            </a>
           </div>
           <div class="carousel-item">
-            <img src="images/desktopImg/bannerPromos.svg" class="d-block" alt="..." />
+            <a href="">
+              <img src="images/desktopImg/bannerPromos.svg" class="d-block" alt="..." />
+            </a>
           </div>
         </div>
 
@@ -172,18 +277,7 @@
 
     <section class="mainIndex__banner container-fluid">
       <div class="mainIndex__bannerContainer row d-md-none">
-        <div class="col-4">
-          <img src="images/ICONENVIO.png" alt="" />
-          <p>Envíos a todo el país</p>
-        </div>
-        <div class="col-4">
-          <img src="images/ICONPROG.png" alt="" />
-          <p>Programá tu pedido</p>
-        </div>
-        <div class="col-4">
-          <img src="images/ICONPAGOS.png" alt="" />
-          <p>Medios de pago</p>
-        </div>
+        <img src="images/3IconosMobile.svg" alt="">
       </div>
       <div class="mainIndex__bannerDesktop d-md-block d-none">
         <img src="images/barraIcono.svg" alt="">
@@ -195,8 +289,10 @@
       <div class="marcasCarrousel__titulo row d-flex ">
         <div class="col-12 col-md-6">
           <h2>Nuestras marcas</h2>
-          <a href="" class="d-md-none"> Ver más </a>
-          <a href="" class="d-none d-md-block"> Ver más> </a>
+          <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría ver más productos de la categoría: "
+            target="_blank" class="d-md-none"> Ver más </a>
+          <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría ver más productos de la categoría: "
+            target="_blank" class="d-none d-md-block"> Ver más> </a>
         </div>
         <div class="col-12 col-md-6">
           <button class="carousel-control-prev d-md-none" type="button" data-bs-target="#carouselExampleControls"
@@ -226,13 +322,13 @@
             <!-- Primer grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <img src="images/Royal.png" alt="" />
+                <img src="images/Royal.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/PurinaProPlan.png" alt="" />
+                <img src="images/PurinaProPlan.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/VitalCan.svg" alt="" />
               </div>
             </div>
           </div>
@@ -240,13 +336,13 @@
             <!-- Segundo grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <img src="images/Eukanubae.png" alt="" />
+                <img src="images/Eukanubae.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/OldPrince.png" alt="" />
+                <img src="images/OldPrince.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/PurinaCatChow.png" alt="" />
+                <img src="images/PurinaCatChow.svg" alt="" />
               </div>
             </div>
           </div>
@@ -254,13 +350,13 @@
             <!-- Tercer grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <img src="images/Golocan.png" alt="" />
+                <img src="images/Golocan.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/DrZoo.png" alt="" />
+                <img src="images/DrZoo.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/DogChow.png" alt="" />
+                <img src="images/DogChow.svg" alt="" />
               </div>
             </div>
           </div>
@@ -277,19 +373,19 @@
             <!-- Primer grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <img src="images/Royal.png" alt="" />
+                <img src="images/Royal.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/PurinaProPlan.png" alt="" />
+                <img src="images/PurinaProPlan.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/VitalCan.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/Eukanubae.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/OldPrince.svg" alt="" />
               </div>
             </div>
           </div>
@@ -297,19 +393,19 @@
             <!-- Segundo grupo de cards del carrousel secundario -->
             <div class="card-group">
               <div class="card">
-                <img src="images/Eukanubae.png" alt="" />
+                <img src="images/PurinaCatChow.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/OldPrince.png" alt="" />
+                <img src="images/Golocan.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/PurinaCatChow.png" alt="" />
+                <img src="images/DrZoo.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/DogChow.svg" alt="" />
               </div>
               <div class="card">
-                <img src="images/VitalCan.png" alt="" />
+                <img src="images/VitalCan.svg" alt="" />
               </div>
             </div>
           </div>
@@ -324,25 +420,35 @@
       <div class="row justify-content-center">
         <div class="masVendidos__titulo col-12">
           <h2>Los mas vendidos</h2>
-          <a href="" class="d-none d-md-block"> Ver más> </a>
+          <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría ver más productos de la categoría: "
+            target="_blank" class="d-none d-md-block"> Ver más> </a>
         </div>
 
         <div class="masVendidos__productos row col-12">
+
+
+
+
+
+
+
           <!-- Primer producto -->
           <div class="producto col-6 col-md-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card productoCard">
-                <img src="images/imgProductos/EukanubaAdulto1.png" class="card-img-top d-md-none" alt="..." />
+                <img src="images/imgProductos/EukanubaAdulto1.svg" class="card-img-top d-md-none" alt="..." />
                 <img src="images/imgProductos/EukanubaAdultoDesktop.svg" class="card-img-top d-md-block d-none"
                   alt="..." />
+
                 <div class="card-body">
                   <h5 class="card-title">Eukanuba Adulto</h5>
-                  <p class="card-text">Alimento para perro adulto </p>
+                  <p class="card-text d-md-block d-none">Perros adultos<br> Razas pequeñas, medianas y grandes</p>
+                  <p class="card-text d-md-none">Alimento para perro adulto </p>
                 </div>
               </div>
             </button>
             <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium" target="_blank">Comprar</a>
+            Eukanuba Adulto" target="_blank">VER PRODUCTOS</a>
           </div>
 
           <!-- Modal -->
@@ -354,50 +460,47 @@
                   <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                   </button>
-                  <h2>Buenar Dog Premium</h2>
+                  <h2>Eukanuba Adulto</h2>
                 </div>
-                <!-- <img src="images/imgProductos/EukanubaAdulto1.png" alt="" /> -->
-
                 <!-- Carousel de imagenes de los productos -->
 
-                <div id="carouselExampleIndicators1" class="carousel slide carouselProductos" data-bs-ride="carousel">
+                <div id="carouselExampleIndicator" class="carousel slide carouselProductos" data-bs-ride="carousel">
                   <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
-                      class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1"
                       aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2"
                       aria-label="Slide 3"></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/imgProductos/EukanubaAdulto1.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/EukanubaAdulto1.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/EukanubaAdulto2.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/EukanubaAdulto2.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/EukanubaAdulto3.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/EukanubaAdulto3.svg" class="d-block" alt="...">
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
 
+                <h4>Alimento para perro Eukanuba Adulto.</h4>
 
-                <h4>Alimento para perro Eukanuba Adulto</h4>
-                <span class="modalSpan">Disponible en: </span>
                 <div class="infoPesos">
                   <ul>
-                    <li>Razas Pequeñas: <p>1 Kg, 3 Kg, 7,5 Kg, 15 Kg</p>
+                    <li>Razas Pequeñas: <p>1Kg, 3Kg, 7,5 Kg, 15Kg</p>
                     </li>
                     <li>Razas Medianas: <p>3 Kg, 15 Kg</p>
                     </li>
@@ -406,26 +509,29 @@
                   </ul>
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium" target="_blank">Comprar</a>
+                Eukanuba Adulto" target="_blank">Comprar</a>
+                <p class="d-md-block d-none">Seras redirigido a Whatsapp para coordinar la compra</p>
               </div>
             </div>
           </div>
+
 
           <!-- Segundo producto -->
           <div class="producto col-6 col-md-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
               <div class="card productoCard">
-                <img src="images/imgProductos/OldPrinceCachorro1.png" class="card-img-top d-md-none" alt="..." />
+                <img src="images/imgProductos/OldPrinceCachorro1.svg" class="card-img-top d-md-none" alt="..." />
                 <img src="images/imgProductos/OldPrinceDesktop.svg" class="card-img-top d-md-block d-none" alt="..." />
 
                 <div class="card-body">
                   <h5 class="card-title">Old Prince Cachorro</h5>
-                  <p class="card-text">Alimento para perro cachorro</p>
+                  <p class="card-text d-md-block d-none">Perros adultos<br> Razas pequeñas, medianas y grandes</p>
+                  <p class="card-text d-md-none">Alimento para perro cachorro</p>
                 </div>
               </div>
             </button>
             <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium" target="_blank">Comprar</a>
+            Old Prince Cachorro" target="_blank">VER PRODUCTOS</a>
           </div>
 
           <!-- Modal -->
@@ -437,7 +543,7 @@
                   <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                   </button>
-                  <h2>Buenar Dog Premium</h2>
+                  <h2>Old Prince Cachorro</h2>
                 </div>
 
                 <!-- Carousel de imagenes de los productos -->
@@ -451,10 +557,10 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/imgProductos/OldPrinceCachorro1.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/OldPrinceCachorro1.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/OldPrinceCachorro2.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/OldPrinceCachorro2.svg" class="d-block" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
@@ -471,7 +577,7 @@
 
 
                 <h4>Alimento para perro Old Prince Cachorro.</h4>
-                <span>Disponible en: </span>
+
                 <div class="infoPesos">
                   <ul>
                     <li>Razas Pequeñas: <p>3 Kg, 7,5 Kg, 15 Kg</p>
@@ -481,7 +587,9 @@
                   </ul>
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium" target="_blank">Comprar</a>
+                Old Prince Cachorro" target="_blank">Comprar</a>
+                <p class="d-md-block d-none">Seras redirigido a Whatsapp para coordinar la compra</p>
+
               </div>
             </div>
           </div>
@@ -490,16 +598,17 @@
           <div class="producto col-6 col-md-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
               <div class="card productoCard">
-                <img src="images/imgProductos/VitalCanSenior1.png" class="card-img-top d-md-none" alt="..." />
+                <img src="images/imgProductos/VitalCanSenior1.svg" class="card-img-top d-md-none" alt="..." />
                 <img src="images/imgProductos/VitalCanDesktop.svg" class="card-img-top d-md-block d-none" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Vital Can Senior</h5>
-                  <p class="card-text">Alimento para perro Senior</p>
+                  <p class="card-text d-md-block d-none">Perros adultos<br> Razas pequeñas, medianas y grandes</p>
+                  <p class="card-text d-md-none">Alimento para perro Senior</p>
                 </div>
               </div>
             </button>
             <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium" target="_blank">Comprar</a>
+            Vital Can Senior" target="_blank">VER PRODUCTOS</a>
           </div>
 
           <!-- Modal -->
@@ -511,7 +620,7 @@
                   <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                   </button>
-                  <h2>Buenar Dog Premium</h2>
+                  <h2>Vital Can Senior</h2>
                 </div>
 
                 <!-- Carousel de imagenes de los productos -->
@@ -527,13 +636,13 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/imgProductos/VitalCanSenior1.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/VitalCanSenior1.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/VitalCanSenior2.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/VitalCanSenior2.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/VitalCanSenior3.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/VitalCanSenior3.svg" class="d-block" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
@@ -549,8 +658,9 @@
                 </div>
 
 
-                <h4>Alimento para perro Eukanuba Adulto</h4>
-                <span>Disponible en: </span>
+                <h4>Alimento para perro Vital Can Senior.
+                  Linea Balanced</h4>
+
                 <div class="infoPesos">
                   <ul>
                     <li>Razas Pequeñas: <p>3 Kg, 7,5 Kg, 15 Kg</p>
@@ -562,7 +672,9 @@
                   </ul>
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium" target="_blank">Comprar</a>
+                Vital Can Senior" target="_blank">Comprar</a>
+                <p class="d-md-block d-none">Seras redirigido a Whatsapp para coordinar la compra</p>
+
               </div>
             </div>
           </div>
@@ -571,17 +683,18 @@
           <div class="producto col-6 col-md-2">
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
               <div class="card productoCard">
-                <img src="images/imgProductos/PurinaProPlanLight1.png" class="card-img-top d-md-none" alt="..." />
+                <img src="images/imgProductos/PurinaProPlanLight1.svg" class="card-img-top d-md-none" alt="..." />
                 <img src="images/imgProductos/PurinaProDesktop.svg" class="card-img-top d-md-block d-none" alt="..." />
 
                 <div class="card-body">
                   <h5 class="card-title">Purina Pro Plan Light</h5>
-                  <p class="card-text">Alimento para perro reducido en calorias </p>
+                  <p class="card-text d-md-block d-none">Perros adultos<br> Razas pequeñas, medianas y grandes</p>
+                  <p class="card-text d-md-none">Alimento para perro reducido en calorias </p>
                 </div>
               </div>
             </button>
             <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-            Buenar Dog Premium" target="_blank">Comprar</a>
+            Purina Pro Plan Light" target="_blank">VER PRODUCTOS</a>
           </div>
 
           <!-- Modal -->
@@ -593,7 +706,7 @@
                   <button type="button" class="" data-bs-dismiss="modal" aria-label="Close">
                     <ion-icon name="arrow-back-outline"></ion-icon>
                   </button>
-                  <h2>Buenar Dog Premium</h2>
+                  <h2>Purina Pro Plan Light</h2>
                 </div>
 
                 <!-- Carousel de imagenes de los productos -->
@@ -607,10 +720,10 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="images/imgProductos/PurinaProPlanLight1.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/PurinaProPlanLight1.svg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="images/imgProductos/PurinaProPlanLight2.png" class="d-block w-100" alt="...">
+                      <img src="images/imgProductos/PurinaProPlanLight2.svg" class="d-block" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
@@ -625,8 +738,9 @@
                   </button>
                 </div>
 
-                <h4>Alimento para perro Eukanuba Adulto</h4>
-                <span>Disponible en: </span>
+                <h4>Alimento para perro Purina Pro Plan
+                  reducido en calorias</h4>
+
                 <div class="infoPesos">
                   <ul>
                     <li>Razas Pequeñas: <p>1 Kg, 3 Kg, 7,5 Kg</p>
@@ -636,7 +750,9 @@
                   </ul>
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, me gustaría saber el precio de este producto:
-                Buenar Dog Premium" target="_blank">Comprar</a>
+                Purina Pro Plan Light" target="_blank">Comprar</a>
+                <p class="d-md-block d-none">Seras redirigido a Whatsapp para coordinar la compra</p>
+
               </div>
             </div>
           </div>
@@ -651,33 +767,93 @@
     </section>
 
     <section class="mainIndex__bannerBienvenido container-fluid">
-      <a href="">
-        <img src="images/imgProductos/BannerKitBienvenida.png" alt="">
+      <a class="d-md-none"
+        href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, quisiera consultarles sobre el Kit de bienvenida para gatitos y chachorros."
+        target="_BLANK">
+        <img class="bannerBienvenidoImgMobile" src="images/imgProductos/BannerKitBienvenida.png" alt="">
+      </a>
+      <a class="d-md-block d-none bannerBienvenidoContainerImg"
+        href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, quisiera consultarles sobre el cupon del 10% de descuento."
+        target="_BLANK">
+        <img class="bannerBienvenidoImg1" src="images/imgProductos/TRWJESKYW 1.png" alt="">
+        <img class="bannerBienvenidoImg2" src="images/imgProductos/Group 504.png" alt="">
       </a>
     </section>
 
+    <section class="bannerProductosDeCalidad d-md-flex d-none">
+      <h2>PRODUCTOS DE CALIDAD AL MEJOR PRECIO</h2>
+    </section>
+
     <section class="mainIndex__bannerCupon container-fluid">
-      <img src="images/imgProductos/BannerCupon.png" alt="" />
-      <a href="">QUIERO MI CUPÓN</a>
+      <a href="">
+        <img class="d-md-none" src="images/imgProductos/BannerCupon.png" alt="" />
+      </a>
+      <a href="">
+        <img class="d-md-block d-none" src="images/imgProductos/BannerCupon2.svg" alt="" />
+      </a>
     </section>
   </main>
 
-  <footer class="footerIndex">
-    <a href="">INICIO</a>
-    <a href="">NOSOTROS</a>
-    <a href="">CONTACTO</a>
-    <a href="preguntas.html">PREGUNTAS FRECUENTES</a>
-    <a href="">GATOS</a>
-    <a href="">PERROS</a>
-    <a href="">ACCESORIOS</a>
-    <a href="">DIRECCIÓN</a>
-    <p>Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+  <footer class="footerIndex d-md-none">
+    <a class="footerIndex__a" href="#">INICIO</a>
+    <a class="footerIndex__a" href="./preguntas.html">NOSOTROS</a>
+    <a class="footerIndex__a" href="./preguntas.html">CONTACTO</a>
+    <a class="footerIndex__a" href="./preguntas.html">PREGUNTAS FRECUENTES</a>
+    <a class="footerIndex__a" href="./layout/gatos/alimento/">GATOS</a>
+    <a class="footerIndex__a" href="./layout/perros/alimento/">PERROS</a>
+    <a class="footerIndex__a" href="./preguntas.html">DIRECCIÓN</a>
+    <p class="footerIndex__p">Tucuman 99 - Lomas de Zamora Buenos Aires</p>
 
-    <div>
-      <ion-icon name="logo-instagram"></ion-icon>
-      <ion-icon name="logo-facebook"></ion-icon>
+    <div class="logosFooterContainer">
+      <a href="">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
     </div>
   </footer>
+
+  <footer class="footerIndex d-md-flex d-none">
+    <img class="imgFooterGatito" src="images/CAT23 1.svg" alt="">
+    <div class="footerSeccionesContainer">
+      <div>
+        <h4>CATEGORIAS</h4>
+        <a href="./layout/gatos/alimento/index.html">Gatos</a>
+        <a href="layout/perros/alimento/index.html">Perros</a>
+        <a href="">Otras mascotas</a>
+      </div>
+      <div>
+        <h4>AYUDA</h4>
+        <a href="./preguntas.html">Formas de pago</a>
+        <a href="./preguntas.html">Medios de envío</a>
+        <a href="./preguntas.html">¿Cómo comprar?</a>
+        <a href="./preguntas.html">Cambios y devoluciones</a>
+        <a href="./preguntas.html">Registrate</a>
+      </div>
+      <div>
+        <h4>ATENCIÓN AL CLIENTE</h4>
+        <a href="./preguntas.html">Contacto</a>
+        <a href="./preguntas.html">¿Cómo llegar?</a>
+        <a href="./preguntas.html">Sucursales</a>
+      </div>
+    </div>
+    <p>Dirección: Tucuman 99 - Lomas de Zamora Buenos Aires</p>
+    <h3>NUESTRAS REDES</h3>
+    <div>
+      <a href="">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+    </div>
+    <a href="./index.html">
+      <img src="images/LogoFooter.svg" alt="">
+    </a>
+    <span>Desde 2021</span>
+  </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
