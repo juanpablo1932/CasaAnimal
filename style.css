@@ -626,6 +626,11 @@ body {
   width: 25%;
 }
 
+.footerIndex a {
+  color: var(--button--accordion);
+  text-decoration: none;
+}
+
 .footerIndex ion-icon {
   width: 2rem;
   height: 3rem;
