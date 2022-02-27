@@ -918,7 +918,7 @@ body {
     margin: 1rem 1% 1rem 2% !important;
   }
 
-  /* .productos__cards--size {
-    justify-content: flex-start !important;
-  } */
+  .producto--size .btn .productoCard {
+    height: 300px;
+  }
 }
