@@ -719,60 +719,6 @@ body {
   margin: 1rem 0 1rem 0;
 }
 
-.bannerCat {
-  background-image: url("./images/banner/visita_gatos.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
-.bannerCatSalud {
-  background-image: url("./images/banner/visita_gatos_salud.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
-.bannerCatGolosina {
-  background-image: url("./images/banner/visita_gatos_golosina.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
-.bannerDog {
-  background-image: url("./images/banner/visita_perros.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
-.bannerDogGolosina {
-  background-image: url("./images/banner/visita_perros_golosina.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
-.bannerDogSalud {
-  background-image: url("./images/banner/visita_perros_salud.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 180px;
-  background-color: #551a8b;
-}
-
 /* ========================================================================================================= */
 /* PRODUCT CARD  */
 /* ========================================================================================================= */
