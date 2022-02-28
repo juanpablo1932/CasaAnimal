@@ -719,6 +719,14 @@ body {
   margin: 1rem 0 1rem 0;
 }
 
+.tipoAlimento__titulo--proto {
+  display: none;
+}
+
+.tipoAlimento__descripcion {
+  display: none;
+}
+
 /* ========================================================================================================= */
 /* PRODUCT CARD  */
 /* ========================================================================================================= */
@@ -771,7 +779,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     font-size: 3rem;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 6rem;
     font-family: "Rubik Mono One", sans-serif;
   }
 
@@ -1471,5 +1479,38 @@ body {
   .producto--size .btn .productoCard .d-md-block {
     width: 250px;
     height: 200px;
+  }
+
+  .mainDogsFood__section-label {
+    font-size: 36px;
+    padding-left: 6rem;
+    font-weight: bold;
+  }
+
+  .tipoAlimento__subTitulo h2 {
+    display: none;
+  }
+
+  .tipoAlimento__titulo--proto {
+    padding-left: 6rem;
+    color: #a8a8a8;
+  }
+
+  .tipoAlimento__titulo h2 {
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 5rem;
+  }
+
+  .tipoAlimento__descripcion {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 5rem;
+    display: inline;
+    color: #a8a8a8;
+  }
+
+  .mainDogsFood__section-buttons {
+    display: none;
   }
 }
