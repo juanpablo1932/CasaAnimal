@@ -143,6 +143,15 @@ body {
   height: 60%;
 }
 
+.btn__otrasMascotas--color {
+  color: white;
+  text-decoration: none;
+}
+
+.btn__otrasMascotas--color:hover {
+  color: white !important;
+}
+
 /* ========================================================================================================= */
 /*   MAIN   */
 /* ========================================================================================================= */
@@ -851,8 +860,8 @@ body {
     background: #08ddb8;
   }
 
-  .menuDesktop li:hover>.menuDesktopPerros,
-  .menuDesktop li:hover>.menuDesktopGatos {
+  .menuDesktop li:hover > .menuDesktopPerros,
+  .menuDesktop li:hover > .menuDesktopGatos {
     display: flex;
   }
 
@@ -931,8 +940,8 @@ body {
     background: #08ddb8;
   }
 
-  .menuDesktop li:hover>.menuDesktopPerros,
-  .menuDesktop li:hover>.menuDesktopGatos {
+  .menuDesktop li:hover > .menuDesktopPerros,
+  .menuDesktop li:hover > .menuDesktopGatos {
     display: flex;
   }
 
@@ -1507,5 +1516,9 @@ body {
 
   .producto--size .btn .productoCard {
     height: 300px;
+  }
+
+  .menuDesktopPerros--position {
+    left: 15%;
   }
 }
