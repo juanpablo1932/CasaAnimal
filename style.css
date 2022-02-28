@@ -1513,4 +1513,8 @@ body {
   .mainDogsFood__section-buttons {
     display: none;
   }
+
+  .linkGatosFood__seco--a {
+    display: none;
+  }
 }
