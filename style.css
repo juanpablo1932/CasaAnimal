@@ -1467,4 +1467,9 @@ body {
   .menuDesktopPerros--position {
     left: 15%;
   }
+
+  .producto--size .btn .productoCard .d-md-block {
+    width: 250px;
+    height: 200px;
+  }
 }
