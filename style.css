@@ -727,6 +727,17 @@ body {
   display: none;
 }
 
+.otrasMascotas__section-buttons--size {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.otrasMascotas__section-buttons--color {
+  background-color: #9752da;
+  border-color: #9752da !important;
+  color: #fafafa;
+}
+
 /* ========================================================================================================= */
 /* PRODUCT CARD  */
 /* ========================================================================================================= */
