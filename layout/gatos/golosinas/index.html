@@ -26,6 +26,14 @@
     <title>Gatos | Golosinas</title>
   </head>
   <body>
+    <div class="imgWhatsApp">
+      <a
+        href="https://api.whatsapp.com/send?phone=541165956466&text=Hola Casa Animal, quisiera consultarles sobre lo siguiente:"
+        target="_blank"
+      >
+        <img src="../../../images/whatsapp.png" alt="" />
+      </a>
+    </div>
     <header class="headerIndex">
       <!-- HEADER MOBILE -->
 
@@ -38,6 +46,11 @@
       >
         <ion-icon name="menu-outline"></ion-icon>
       </button>
+      <div class="logoCasaMobile d-md-none">
+        <a href="../../../index.html">
+          <img src="../../../images/LogoCasaAnimalMobile.svg" alt="" />
+        </a>
+      </div>
 
       <div
         class="offcanvas offcanvas-start headerMenu d-md-none"
@@ -121,7 +134,9 @@
                 aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body"></div>
+                <div class="accordion-body">
+                  <a href="../../otras mascotas">Otras mascotas</a>
+                </div>
               </div>
             </div>
           </div>
@@ -130,13 +145,101 @@
 
       <!-- HEADER DESKTOP -->
 
-      <div class="headerLogoDesktop d-none d-md-block">CASA ANIMAL</div>
+      <div class="headerLogoDesktop d-none d-md-block">
+        <a href="../../../index.html">
+          <img src="../../../images/logoHeaderDesktop.svg" alt="" />
+        </a>
+      </div>
       <div class="menuDesktop d-none d-md-block">
         <ul>
-          <li>Perros</li>
-          <li>Gatos</li>
-          <li>Accesorios</li>
-          <li>Otras mascotas</li>
+          <li>
+            Perros
+            <div class="menuDesktopPerros menuDesktopPerros--position">
+              <div class="menuDesktopPerrosContenedores">
+                <div>
+                  <a href="../../perros/alimento">
+                    <h5>Alimento</h5>
+                  </a>
+                  <a href="../../perros/alimento#secos">
+                    <p>Secos</p>
+                  </a>
+                  <a href="../../perros/alimento#humedos">
+                    <p>Húmedos</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="../../perros/salud">
+                    <h5>Salud</h5>
+                  </a>
+                  <a href="../../perros/salud">
+                    <p>Pipetas</p>
+                  </a>
+                  <a href="../../perros/salud">
+                    <p>Medicamentos</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="../../perros/golosinas">
+                    <h5>Golosinas</h5>
+                  </a>
+                  <a href="">
+                    <p class="pNoVisiblesMenu"></p>
+                  </a>
+                  <a href="">
+                    <p class="pNoVisiblesMenu"></p>
+                  </a>
+                </div>
+              </div>
+              <img src="../../../images/perritoMenu.svg" alt="" />
+            </div>
+          </li>
+          <li>
+            Gatos
+            <div class="menuDesktopGatos">
+              <div class="menuDesktopGatosContenedores">
+                <div>
+                  <a href="../alimento">
+                    <h5>Alimento</h5>
+                  </a>
+                  <a href="../alimento#secos">
+                    <p>Secos</p>
+                  </a>
+                  <a href="../alimento#humedos">
+                    <p>Húmedos</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="../salud">
+                    <h5>Salud</h5>
+                  </a>
+                  <a href="../salud">
+                    <p>Pipetas</p>
+                  </a>
+                  <a href="../salud">
+                    <p>Medicamentos</p>
+                  </a>
+                </div>
+                <div>
+                  <a href="../golosinas">
+                    <h5>Golosinas</h5>
+                  </a>
+                  <a href="">
+                    <p class="pNoVisiblesMenu"></p>
+                  </a>
+                  <a href="">
+                    <p class="pNoVisiblesMenu"></p>
+                  </a>
+                </div>
+              </div>
+              <img src="../../../images/gatitoMenu.svg" alt="" />
+            </div>
+          </li>
+          <!-- <li>Accesorios</li> -->
+          <li>
+            <a class="btn__otrasMascotas--color" href="../../otras mascotas"
+              >Otras mascotas</a
+            >
+          </li>
         </ul>
       </div>
     </header>
